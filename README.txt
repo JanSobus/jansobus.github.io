@@ -1,12 +1,3 @@
-This is the page webpage for my wedding, template info below
-
-
-
-
-
-
-
-
 
 Twenty by HTML5 UP
 html5up.net | @ajlkn
