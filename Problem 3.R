@@ -1,0 +1,434 @@
+library("readr")
+library("dplyr")
+library("plotly")
+library("ggplot2")
+library("htmlwidgets")
+library("crosstalk")
+library("reshape2")
+
+#Getting the flight data,parsing, adding country codes, continents and coordinates
+raw_data <- read_csv("seat_utilisation.csv")
+raw_data$Service_Country[raw_data$Service_Country == "UK"] <- "United Kingdom"
+raw_data$Service_Country[raw_data$Service_Country == "USA"] <- "United States"
+raw_data$Service_Country[raw_data$Service_Country == "Korea"] <- "South Korea"
+raw_data$Service_Country[raw_data$Service_Country == "Western Samoa"] <- "Samoa"
+raw_data$Service_Country[raw_data$Service_Country == "Hong Kong (SAR)"] <- "Hong Kong"
+raw_data <- raw_data[!raw_data$Service_Country == "Macau (SAR)",]
+raw_data <- raw_data[!raw_data$Service_Country == "Yugoslavia",]
+raw_data <- raw_data[!raw_data$Service_Country == "Tahiti",]
+raw_data <- raw_data[!raw_data$Service_Country == "Reunion",]
+raw_map_data<- read_csv("https://gist.githubusercontent.com/tadast/8827699/raw/7255fdfbf292c592b75cf5f7a19c16ea59735f74/countries_codes_and_coordinates.csv")
+raw_map_data$Country[raw_map_data$Country == "Timor-Leste"] <- "East Timor"
+continents<- read_csv("Countries-Continents.csv")
+continents$Country[continents$Country == "Korea, South"] <- "South Korea"
+continents$Country[continents$Country == "Russian Federation"] <- "Russia"
+continents$Country[continents$Country == "US"] <- "United States"
+continents <-rbind(continents,c("Oceania","New Caledonia"))
+continents <-rbind(continents,c("Oceania","Guam"))
+continents <-rbind(continents,c("Oceania","American Samoa"))
+continents <-rbind(continents,c("Oceania","Cook Islands"))
+continents <-rbind(continents,c("Asia","Taiwan"))
+continents <-rbind(continents,c("Asia","Hong Kong"))
+names(raw_map_data)[5:6] <- c("Lat","Long")
+raw_data <- left_join(raw_data,raw_map_data,by = c("Service_Country" = "Country" ))
+raw_data <- left_join(raw_data,continents,by = c("Service_Country" = "Country" ))
+
+
+data <- raw_data%>%
+  select(-c(Month,`Alpha-2 code`,`Numeric code`))%>%
+  filter(Year > 1991 & Year < 2019) %>%
+  mutate(
+    Pax_Diff = Passengers_In-Passengers_Out,
+    )
+ydata <- data%>%
+  group_by(
+    Airline,
+    Service_Country,
+    Continent,
+    `Alpha-3 code`,
+    Year,
+    Lat,
+    Long
+    )%>%
+  summarize(
+    PaxIn=sum(Passengers_In),
+    PaxOut=sum(Passengers_Out),
+    FIn=sum(Flights_In),
+    FOut=sum(Flights_Out), 
+    paxDiff=sum(Pax_Diff),
+    SIn=sum(Seats_In),
+    SOut=sum(Seats_Out)
+    )
+
+#Getting and parsing 2016 census data
+cen1 <- t(read_csv("2016Census_G10A_AUS.csv",col_names=F))[-1,]
+cen2 <- t(read_csv("2016Census_G10B_AUS.csv",col_names=F))[-1,]
+cen3 <- t(read_csv("2016Census_G10C_AUS.csv",col_names=F))[-1,]
+raw_cen <- rbind(cen1,cen2,cen3)
+cen_names <- unlist(strsplit(unname(raw_cen[16*c(1:(dim(raw_cen)[1]/16)),1]),"_Tot"))
+census <- as.data.frame(matrix(as.numeric(raw_cen[,2]), ncol=16, byrow=TRUE))
+census$Country <-cen_names[-33]
+names(census)[1:16] <- as.character(c("Mig_Bef_1946","Mig_1946_1955","Mig_1956_1965","Mig_1966_1975","Mig_1976_1985","Mig_1986_1995","Mig_1996_2005","Mig_2006_2010","Mig_2011","Mig_2012","Mig_2013","Mig_2014","Mig_2015","Mig_2016","Mig_NS","Mig_Total"))
+census <- rbind(arrange(.data= census[1:34,],desc(Mig_Total)),census[c(35,36),])
+census$Country<-gsub("_"," ",census$Country)
+census$Country[census$Country=="China exc SARs Taiwan"] <- "China"
+
+#Graph preparation
+#G1 - fill factor for airlines vs average passengers per plane, total passengers as size and continent as color
+
+
+p1<-ydata%>% 
+  mutate(TPax = PaxIn+PaxOut, TFlights = FIn+FOut, TSeats=SIn+SOut, PackEff=TPax/TSeats, SPF=min(TSeats/TFlights,500) )%>%
+  plot_ly(x=~TPax,y=~PackEff)%>%
+    add_markers(
+      frame=~Year,
+      ids=~Airline,
+      sizes = c(10, 50),
+      color=~Continent,
+      marker = list(opacity = 0.5 ,sizemode ="diameter", size=~SPF, sizeref=20),
+      hoverinfo="text", 
+      text= ~paste0("<B>Airline: </B>",Airline,"<BR>",
+                    "<B>Country: </B>",Service_Country,"<BR>",
+                    "<B>Passengers: </B>",TPax,"<BR>",
+                    "<B>Seat efficiency: </B>",round(PackEff,2)
+                    )
+                )%>%
+    layout(
+      title="Australian air connections overview",
+      xaxis=list(title="Total Passengers", type="log"),
+      yaxis=list(title="Seat Effectiveness")
+      
+    )%>%
+  animation_opts( 
+    frame = 1500,  
+    transition = 500 
+  ) %>%
+  animation_slider( 
+    currentvalue = list(prefix=NULL, font=list(size=20,color="black")),
+    
+  )
+p1
+saveWidget(p1,"p1.html")
+
+######################################################################################################
+#G2 - splom of the same data
+d2 <- ydata %>%
+  select(Airline,Continent,Service_Country,Year,PaxIn,PaxOut,FIn,FOut,SIn,SOut)%>%
+  mutate(TPax = PaxIn+PaxOut, TFlights = FIn+FOut, TSeats=SIn+SOut, PackEff=TPax/TSeats, SPF=TSeats/TFlights)%>%
+  group_by(Year)%>%
+  top_n(n=10, wt= TPax)
+
+p2<- d2%>%
+  plot_ly()%>%
+  add_trace(
+    hoverinfo="text",
+    text=~paste0("<B>Airline: </B>",Airline,"<BR>",
+                 "<B>Year: </B>",Year,"<BR>",
+                 "<B>Country: </B>",Service_Country,"<BR>",
+                 "<B>Passengers: </B>",TPax,"<BR>",
+                 "<B>Seat efficiency: </B>",round(PackEff,2),"<br>",
+                 "<B>Average Seats Per Flight: </B>",round(SPF,1)
+                 ),
+    color=~Continent,
+    type="splom",
+    dimensions=list(
+      list(label="Year", values=~Year),
+      list(label="Total Passengers", values=~TPax),
+      list(label="Avg seats per flight", values=~SPF),
+      list(label="Seat Effectiveness", values=~PackEff)
+      
+      
+       )
+  ) %>%
+  layout(
+    #yaxis3 = list(range=c(0,500)),
+    xaxis2 = list(type="log"),
+    yaxis2 = list(type="log"),
+    legend = list(orientation ="h", x=0.35, y=0.9, font = list(size=15)),
+    title = "Scatterplot matrix of factor affecting seat effectiveness"
+  )%>%
+  style(diagonal = list(visible = F),
+        showupperhalf = F)
+p2
+saveWidget(p2,"p2.html")
+
+m1<-lm(PackEff ~ TPax * Year * SPF ,d2)
+anova(m1)
+
+#########################################################################################
+#G3 - modeling of the seats vs pax
+d3 <- ydata%>%
+  filter(Airline == "Singapore Airlines", Service_Country == "Singapore")
+
+names=unique(d3$Year)
+
+
+l3 <- list()
+for (i in 1:(length(names)-5)) {
+  l3[[i]] <- list(
+    visible = F,
+    mdata = d3%>%filter(Year <= names[i+5], Year >= names[i])%>%mutate(TPax = PaxIn+PaxOut),
+    data1 = d3%>%filter(Year <= names[i+5])%>%mutate(TPax = PaxIn+PaxOut),
+    name = names[i+5],
+    x2 = d3%>%filter(Year >= names[i])
+  )
+  l3[[i]]$mdata$weight <- 1:6
+  l3[[i]]$model <- lm(TPax~Year,data = l3[[i]]$mdata, weights = weight)
+  l3[[i]]$mres <- as.data.frame(predict(l3[[i]]$model,l3[[i]]$x2,interval = "prediction"))
+}
+l3[[5]]$visible = T
+
+steps <- list()
+p3 <- d3 %>% 
+  plot_ly(x=~Year)%>%
+  add_markers(y=~SIn+SOut,visible=T, name="Total seats",marker=list(color="Black", symbol="circle-open", opacity=0.5))
+for (i in 1:(length(names)-5)) {
+  p3 <- add_markers(p3,x=l3[[i]]$data1$Year,  y=l3[[i]]$data1$TPax,
+                  visible = l3[[i]]$visible, 
+                  
+                  name = 'Total Passengers', type = 'scatter',
+                  marker=list(color='Black'), showlegend = T)
+  p3 <-add_lines(p3,x=l3[[i]]$x2$Year,y=l3[[i]]$mres$fit,visible = l3[[i]]$visible,
+                 line = list(color = 'rgba(7, 164, 181, 1)'),
+                 name="Predicted passengers")
+  p3 <-add_ribbons(p3,
+                   line = list(color = 'rgba(7, 164, 181, 0.05)'),
+                   fillcolor = 'rgba(7, 164, 181, 0.2)',
+                   x=l3[[i]]$x2$Year,
+                   ymin=l3[[i]]$mres$lwr,
+                   ymax=l3[[i]]$mres$upr,
+                   visible = l3[[i]]$visible,
+                   name="Prediction interval")
+  
+  
+  
+  step <- list(
+    method = 'restyle',
+    label=names[i+5],
+    args = list("visible",as.list( c(TRUE,rep(rep(FALSE, length(l3)),each=3)) )) #change each
+  )
+  step$args[[2]][[3*i]] = TRUE  
+  step$args[[2]][[3*i-1]] = TRUE
+  step$args[[2]][[3*i+1]] = TRUE
+  steps[[i]] = step 
+} 
+p3 <- p3 %>%
+  layout(
+    sliders = list(list(active = 5,
+                             currentvalue = list(prefix = NULL),
+                             steps = steps)),
+    xaxis = list(range=c(1997,2018), title="Year"),
+    yaxis = list(title="Yearly Totals"),
+    title="Predicting number of necessary seats - Singapore Airlines"
+    )
+p3
+saveWidget(p3,"p3.html")
+
+#########################################################################################
+#G4 - In vs out(packing eff,pax)
+d4 <- ydata %>%
+  select(Service_Country,PaxIn,PaxOut,SIn,SOut,Year) %>%
+  group_by(Year,Service_Country) %>%
+  summarise(
+    TPaxIn=sum(PaxIn),
+    TPaxOut=sum(PaxOut),
+    SEffIn=sum(PaxIn)/sum(SIn), 
+    SEffOut=sum(PaxOut)/sum(SOut)
+    )%>%
+  na.omit()%>%
+  arrange(Service_Country)%>%
+  group_by(Service_Country) %>% 
+  filter (n() != 1)
+
+names=unique(d4$Service_Country)
+
+l4 <- list()
+for (i in 1:length(names)) {
+  l4[[i]] <- list(
+      visible = F,
+      data = d4%>%filter(Service_Country == names[i]),
+      name = names[i]
+    
+  )
+  
+}
+l4[[1]]$visible = T
+
+
+steps <- list()
+p4 <- plot_ly()
+for (i in 1:length(names)) {
+  p4 <- add_lines(p4,x=l4[[i]]$data$Year,  y=l4[[i]]$data$TPaxIn,
+                  visible = l4[[i]]$visible, fill = 'tozeroy',
+                  fillcolor = 'rgba(0, 255, 0, 0.4)',
+                 name = 'Passengers in', type = 'scatter', mode = 'lines',
+                 hoverinfo = "text",
+                 text=paste0(
+                   "<B>Country: </B>",l4[[i]]$data$Service_Country,"<BR>",
+                   "<B>Year: </B>",l4[[i]]$data$Year,"<BR>",
+                   "<B>Passengers in: </B>",l4[[i]]$data$TPaxIn,"<BR>",
+                   "<B>Seat efficiency in: </B>",round(l4[[i]]$data$SEffIn,2)
+                 ),
+                 line=list(color='Green'), showlegend = T)
+  p4 <- add_lines(p4,x=l4[[i]]$data$Year,  y=l4[[i]]$data$TPaxOut,
+                  visible = l4[[i]]$visible,fill = 'tozeroy',
+                  fillcolor = 'rgba(255, 0, 0, 0.4)',
+                  name = 'Passengers out', type = 'scatter',mode = 'lines',
+                  hoverinfo = "text",
+                  text=paste0(
+                    "<B>Country: </B>",l4[[i]]$data$Service_Country,"<BR>",
+                    "<B>Year: </B>",l4[[i]]$data$Year,"<BR>",
+                    "<B>Passengers out: </B>",l4[[i]]$data$TPaxOut,"<BR>",
+                    "<B>Seat efficiency out: </B>",round(l4[[i]]$data$SEffOut,2)
+                  ),
+                  line=list(color='Red'), showlegend = T)
+  
+  
+  step <- list(
+    method = 'restyle',
+    label=names[i],
+    args = list("visible",as.list( rep(rep(FALSE, length(l4)),each=2) ))
+  )
+  step$args[[2]][[2*i]] = TRUE  
+  step$args[[2]][[2*i-1]] = TRUE  
+  steps[[i]] = step 
+} 
+
+
+p4 <- p4 %>% layout(
+  xaxis = list(title="Year", type="category"),
+  yaxis = list(title="Total passengers"),
+  title="Incoming and outgoing passengers per country",
+  updatemenus = list(
+    list(
+      y=0.8,
+    buttons = steps
+    )
+    )
+  )
+p4
+saveWidget(p4,"p4.html")
+
+
+#G5- Map
+l <- list(color = toRGB("black"), width = 0.6)
+
+# specify map projection/options
+g <- list(
+  showland = TRUE,
+  showlakes = TRUE,
+  showcountries = TRUE,
+  showocean = TRUE,
+  countrywidth = 0.5,
+  landcolor = toRGB("white"),
+  lakecolor = toRGB("white"),
+  oceancolor = toRGB("skyblue"),
+  projection = list(
+    type = 'orthographic',
+    rotation = list(
+      lon = -100,
+      lat = 40,
+      roll = 0
+    ))
+)
+
+
+p5 <- plot_geo(
+  ydata%>%
+    filter(Year==2018)%>%
+    group_by(`Alpha-3 code`,Service_Country,Lat,Long)%>%
+    summarise(paxDiffT=sum(paxDiff))%>%
+    arrange(desc(paxDiffT))
+  ) %>%
+  add_trace(
+    z = ~paxDiffT, colors = 'RdYlGn', name ="Net flux", hoverinfo="text",
+    text = ~paste0(
+      "<B>Country: </B>",Service_Country,"<BR>",
+      "<B>Net Passengers number: </B>",paxDiffT            
+                   
+                   
+                   ), locations = ~`Alpha-3 code`, marker = list(line = l)
+  ) %>%
+  colorbar(title = "Net Passengers") %>%
+  layout(
+    
+    title = "Net passenger flux into Australia per country of origin in 2018",
+    geo = g
+  )
+p5
+saveWidget(p5,"p5.html")
+
+
+#G6 - Linking with census
+
+d6 <- ydata%>%
+  group_by(Service_Country,Year)%>%
+  summarise(TPaxDiff = sum(paxDiff))%>%
+  filter(Year>=2011, Year<=2015)
+c6<-census%>%select(Country,Mig_2011,Mig_2012,Mig_2013,Mig_2014,Mig_2015)
+colnames(c6)[2:6]<-2011:2015
+c6<- setNames(melt(c6),c("Country","Year","MigIn")) 
+d6$Year<-as.factor(d6$Year)
+d6 <-na.omit(left_join(d6,c6,by=c("Service_Country" = "Country", "Year" = "Year")))
+
+m6 <- lm(TPaxDiff~MigIn, d6)
+summary(m6)
+d7 <-d6%>%filter(Service_Country != "United Arab Emirates",Service_Country != "Hong Kong",Service_Country != "Singapore")
+m7 <- lm(TPaxDiff~MigIn, d7)
+summary(m7)
+anova(m6)
+anova(m7)
+d8<-d6%>%filter(Service_Country == "Singapore")
+p6 <- plot_ly()%>%
+  add_markers(data=d7,
+              x=~MigIn,
+              y=~TPaxDiff,
+              marker = list(size = 10,
+                            color = 'rgba(255, 182, 193, .9)'),
+              name="Migration origin countries",
+              hoverinfo="text",
+              text=~paste0(
+                "<B>Country: </B>",Service_Country,"<BR>",
+                "<B>Year: </B>",Year,"<BR>",
+                "<B>Net Passengers number: </B>",TPaxDiff,"<BR>",
+                "<B>Migrants according to census: </B>",MigIn
+              )
+              )%>%
+  add_markers(data=d8,
+              x=~MigIn,
+              y=~TPaxDiff,
+              marker = list(size = 10,
+                            color = 'rgba(255, 182, 193, .9)',
+                            line = list(color = 'rgba(152, 0, 0, .8)',
+                                        width = 2)),
+              name="Singapore",
+              hoverinfo="text",
+              text=~paste0(
+                "<B>Country: </B>",Service_Country,"<BR>",
+                "<B>Year: </B>",Year,"<BR>",
+                "<B>Net Passengers number: </B>",TPaxDiff,"<BR>",
+                "<B>Migrants according to census: </B>",MigIn
+              )
+  )%>%
+  add_lines(
+    x=~d6$MigIn,
+    y=~fitted(m6,d6),
+    line = list(color = 'rgba(152, 0, 0, .8)', width = 4, dash = 'dash'),
+    name="P. value = 0.946",
+    hoverinfo="none"
+  )%>%
+  add_lines(
+    x=~d7$MigIn,
+    y=~fitted(m7,d7),
+    line = list(color = 'rgba(152, 0, 0, .8)', width = 4),
+    name="P. value = 0.283",
+    hoverinfo="none"
+  )%>%
+  layout(
+    title="Correlation between census and airline information:",
+    xaxis=list(title="Migration per country, per year - census data"),
+    yaxis=list(title="Net passenger flux per country,per year - airline data")
+  )
+  
+p6
+saveWidget(p6,"p6.html")
