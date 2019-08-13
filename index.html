@@ -71,19 +71,42 @@
 									I used the following data sets:
 									<ol>
 										<li><a href="https://data.gov.au/data/dataset/international-airlines-seat-utilisation-factors/resource/32a04fa6-18af-48cc-979c-ebc26710b9a2?fbclid=IwAR1l-m-R7seyfPWp7ui7n73cYelkUFQV2EyzpVedZbkwACFbqcWZWMSjoYk">Australian seat utilisation factors from Australian Governmet</a></li>
-										<li><a href="https://datapacks.censusdata.abs.gov.au/datapacks/">Australian 2016 Census data pack from Austrialian Bureau of Statisics</a></li>
+										<li><a href="https://datapacks.censusdata.abs.gov.au/datapacks/">Australian 2016 Census data pack from Australian Bureau of Statisics</a></li>
 									</ol>
 									<h3>Data overview</h3>
 									<iframe src="p1.html" height=600 width =800 align="center"></iframe>
+									<p> Here data is summarized with each point representing one airline in the given year and size of the spot representing average number of passengers per flight.
+										Few observations appear:</p>
+										<ul>
+											<li>Seat util.factor increases with time</li>
+											<li>Seat util. factor increases with the passenger total</li>
+											<li>Amount of passengers per flight seems insignificant</li>
+											<li>Further destinations (Europe, America) are more consistent than more local ones (Oceania, Asia)</li>
+										</ul>
 									<iframe src="p2.html" height=600 width =800 align="center"></iframe>
+									<p>Top 10 airlines (Total passenger number) per year:</p>
+									<ul>
+										<li>Clearly manifested correlation with time and total number of passengers.</li>
+										<li>Shift in the market can be observed (American connections disappearing from the top 10)</li>
+
+									</ul>
 									<h3>Predicting number of necessary seats</h3>
 									<iframe src="p3.html" height=600 width =800 align="center"></iframe>
+									<p>In order to see if the total number of necessary seats is predictable based on the number of passengers, I took Singapore Airlines as the carrier with the largest total number of passengers during the analyzed period.
+									Even using the simplest model (linear trend of the last 5 years) it is obvious that the offered number of seats lies in the upper part of prediction interval or outside it (especially in later years).
+									Employing more sophisticated model could further narrow the prediction interval and show potential savings.</p>
 									<h3>In-out anomalies</h3>
+									<p>Upon plotting number of passengers flying in and out of Australia from different countries,
+										 it looks that for some of them there is a noticable difference between number of people going both directions
+										 (previous trend is conserved, more people = better seat utilisation), especially in recent years. </p>
 									<iframe src="p4.html" height=600 width =800 align="center"></iframe>
+									<p>When put on the map (2018 data), it looks that the largest positive flux of people towards Australia comes from the coutries typically associated with large nuber of migrants. </p>
 									<iframe src="p5.html" height=600 width =800 align="center"></iframe>
 									<h3>Migration prediction?</h3>
 									<iframe src="p6.html" height=600 width =800 align="center"></iframe>
-									<p> integer lorem ipsum dolor sit amet.</p>
+									<p> Linking the migration data with airline data seems to yield worthless results at first (probabilty of H0 close to 1)
+									However, upon removing Singapore, which is more of a transfer hub than migration origin, H0 drops below 0.3.
+								   Further refinement of the model using flight data from more countries in order to take stopover into account  </p>
 									<h3>Tools used</h3>
 									<ul>
 										<li>R with RStudio</li>
@@ -157,7 +180,7 @@
 							</section>
 
 						<!-- Five -->
-
+<!--
 							<section id="five">
 								<div class="container">
 									<h3>Elements</h3>
@@ -486,7 +509,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								</div>
 							</section>
 
-
+-->
 					</div>
 
 				<!-- Footer -->
