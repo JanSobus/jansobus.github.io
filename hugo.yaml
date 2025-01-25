@@ -1,7 +1,7 @@
-baseURL: https://hugo-toha.github.io
+baseURL: https://jansobus.github.io
 
-languageCode: bn
-title: "John's Blog"
+languageCode: en-us
+title: "Personal webpage of Jan Sobus"
 
 # Use Hugo modules to add theme
 module:
@@ -21,14 +21,14 @@ module:
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
 languages:
   en:
-    languageCode: en
+    languageCode: en-us
     languageName: English
-    title: "John's Blog"
+    title: "Personal webpage of Jan Sobus"
     weight: 1
   bn:
-    languageCode: bn
-    languageName: বাংলা
-    title: জনের ব্লগ
+    languageCode: pl
+    languageName: Polski
+    title: Jan Sobus - Portfolio
     weight: 2
 # default language for the content
 defaultContentLanguage: en
@@ -68,7 +68,7 @@ params:
     favicon: /images/site/favicon.png
 
   # GitHub repo of your site
-  gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
+  gitRepo: https://github.com/jansobus/jansobus.github.io
   # Default branch of your Git repo
   gitBranch: main
 
@@ -153,7 +153,7 @@ params:
 
     # Enable Analytics
     analytics:
-      enabled: true
+      enabled: false
       services:
         # Google Analytics
         google:
