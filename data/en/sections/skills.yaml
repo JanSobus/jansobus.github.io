@@ -41,158 +41,158 @@ skills:
   categories: ["basic","main"]
   url: "https://git-scm.com/"
 
-- name: Windows
-  logo: /images/sections/skills/windows.jpg
-  summary: "Using Windows as one of the main operating systems. Capable of configuring both hardware and software for ML applications and write simple shell scripts if necessary."
-  categories: ["basic"]
-  url: "https://www.microsoft.com/en-us/windows"
+# - name: Windows
+#   logo: /images/sections/skills/windows.jpg
+#   summary: "Using Windows as one of the main operating systems. Capable of configuring both hardware and software for ML applications and write simple shell scripts if necessary."
+#   categories: ["basic"]
+#   url: "https://www.microsoft.com/en-us/windows"
 
-- name: Linux
-  logo: /images/sections/skills/linux.png
-  summary: "Using Linux as one of the main operating systems. Capable of setting up both hardware and software for ML applications. Most familiar with Ubuntu/Debian variants."
-  categories: ["basic"]
-  url: "https://ubuntu.com/"
+# - name: Linux
+#   logo: /images/sections/skills/linux.png
+#   summary: "Using Linux as one of the main operating systems. Capable of setting up both hardware and software for ML applications. Most familiar with Ubuntu/Debian variants."
+#   categories: ["basic"]
+#   url: "https://ubuntu.com/"
 
-- name: Postgres
-  logo: /images/sections/skills/postgres.svg
-  summary: "Using PostgreSQL as the main relational database."
-  categories: ["data"]
-  url: "https://www.postgresql.org/"
+# - name: Postgres
+#   logo: /images/sections/skills/postgres.svg
+#   summary: "Using PostgreSQL as the main relational database."
+#   categories: ["data"]
+#   url: "https://www.postgresql.org/"
 
-- name: DuckDB
-  logo: /images/sections/skills/duckdb.png
-  summary: "Using DuckDB as the main database for quick prototyping."
-  categories: ["data"]
-  url: "https://duckdb.org/"
+# - name: DuckDB
+#   logo: /images/sections/skills/duckdb.png
+#   summary: "Using DuckDB as the main database for quick prototyping."
+#   categories: ["data"]
+#   url: "https://duckdb.org/"
 
-- name: Spark
-  logo: /images/sections/skills/spark.jpg
-  summary: "Using Spark as the main framework for big data processing. I've been running it locally and in the cloud with Databricks."
-  categories: ["data", "cloud"]
-  url: "https://spark.apache.org/"
+# - name: Spark
+#   logo: /images/sections/skills/spark.jpg
+#   summary: "Using Spark as the main framework for big data processing. I've been running it locally and in the cloud with Databricks."
+#   categories: ["data", "cloud"]
+#   url: "https://spark.apache.org/"
 
-- name: Qdrant and Chroma
-  logo: /images/sections/skills/qdrant.png
-  summary: "Using Qdrant (cloud) and Chroma (local) as the main vector databases."
-  categories: ["data","ml"]
-  url: "https://qdrant.tech/"
+# - name: Qdrant and Chroma
+#   logo: /images/sections/skills/qdrant.png
+#   summary: "Using Qdrant (cloud) and Chroma (local) as the main vector databases."
+#   categories: ["data","ml"]
+#   url: "https://qdrant.tech/"
 
-- name: Neo4j
-  logo: /images/sections/skills/neo4j.png
-  summary: "Using Neo4j as the main graph database."
-  categories: ["data","ml"]
+# - name: Neo4j
+#   logo: /images/sections/skills/neo4j.png
+#   summary: "Using Neo4j as the main graph database."
+#   categories: ["data","ml"]
 
-- name: Redis
-  logo: /images/sections/skills/redis.webp
-  summary: "Using Redis as the main cache/in memory database."
-  categories: ["data"]
+# - name: Redis
+#   logo: /images/sections/skills/redis.webp
+#   summary: "Using Redis as the main cache/in memory database."
+#   categories: ["data"]
 
-- name: File storage
-  logo: /images/sections/skills/file-storage.jpg
-  summary: "Using Blob Storage (Azure) and S3 (AWS) as the main cloud storage."
-  categories: ["data","cloud"]
+# - name: File storage
+#   logo: /images/sections/skills/file-storage.jpg
+#   summary: "Using Blob Storage (Azure) and S3 (AWS) as the main cloud storage."
+#   categories: ["data","cloud"]
 
-- name: Python
-  logo: /images/sections/skills/python.png
-  summary: "Extensive knowledge of Python language. That's my everyday tool for both data science and software development."
-  categories: ["main", "language"]
+# - name: Python
+#   logo: /images/sections/skills/python.png
+#   summary: "Extensive knowledge of Python language. That's my everyday tool for both data science and software development."
+#   categories: ["main", "language"]
 
-- name: C
-  logo: /images/sections/skills/C_logo.png
-  summary: "Know basic C programming. Used it for for numerical simulations in early research papers."
-  categories: ["language"]
+# - name: C
+#   logo: /images/sections/skills/C_logo.png
+#   summary: "Know basic C programming. Used it for for numerical simulations in early research papers."
+#   categories: ["language"]
   
-- name: R
-  logo: /images/sections/skills/R_logo.png
-  summary: "Moderately experienced with R language. Used it for statistical analysis and data visualization."
-  categories: ["language"]
+# - name: R
+#   logo: /images/sections/skills/R_logo.png
+#   summary: "Moderately experienced with R language. Used it for statistical analysis and data visualization."
+#   categories: ["language"]
 
-- name: HTML + CSS
-  logo: /images/sections/skills/html.png
-  summary: "Basic knowledge of HTML and CSS. Used it for creating simple frontend for my projects (using Jinja templates)."
-  categories: ["language"]
+# - name: HTML + CSS
+#   logo: /images/sections/skills/html.png
+#   summary: "Basic knowledge of HTML and CSS. Used it for creating simple frontend for my projects (using Jinja templates)."
+#   categories: ["language"]
 
-- name: SQL
-  logo: /images/sections/skills/sql.png
-  summary: "Moderately experienced with SQL. Used it for querying data sources. Prefer to use DuckDB for local development and Postgres for cloud deployments."
-  categories: ["language"]
+# - name: SQL
+#   logo: /images/sections/skills/sql.png
+#   summary: "Moderately experienced with SQL. Used it for querying data sources. Prefer to use DuckDB for local development and Postgres for cloud deployments."
+#   categories: ["language"]
 
-- name: Java
-  logo: /images/sections/skills/java.png
-  summary: "Collaborated with Java backend developers on multiple projects. Familiar with the language (can understand code)."
-  categories: ["language"]
+# - name: Java
+#   logo: /images/sections/skills/java.png
+#   summary: "Collaborated with Java backend developers on multiple projects. Familiar with the language (can understand code)."
+#   categories: ["language"]
 
-- name: Typescript
-  logo: /images/sections/skills/typescript.png
-  summary: "Basic knowledge of Typescript. Explored it for creating simple LLM based applications (as an alternative to Python)."
-  categories: ["language"]
+# - name: Typescript
+#   logo: /images/sections/skills/typescript.png
+#   summary: "Basic knowledge of Typescript. Explored it for creating simple LLM based applications (as an alternative to Python)."
+#   categories: ["language"]
 
 
-- name: Pytorch
-  logo: /images/sections/skills/pytorch.png
-  summary: "Main framework I use for deep learning. That includes writing custom models, training them, customizing training pipelines, optimizers, loss functions, etc."
-  categories: ["ml", "main"]
-  url: "https://pytorch.org/"
+# - name: Pytorch
+#   logo: /images/sections/skills/pytorch.png
+#   summary: "Main framework I use for deep learning. That includes writing custom models, training them, customizing training pipelines, optimizers, loss functions, etc."
+#   categories: ["ml", "main"]
+#   url: "https://pytorch.org/"
 
-- name: Tensorflow and Keras
-  logo: /images/sections/skills/tf.png
-  summary: "Secondary deep learning framework. I try to migrate existing infrastructure to Pytorch, if possible."
-  categories: ["ml"]
-  url: "https://www.tensorflow.org/"
+# - name: Tensorflow and Keras
+#   logo: /images/sections/skills/tf.png
+#   summary: "Secondary deep learning framework. I try to migrate existing infrastructure to Pytorch, if possible."
+#   categories: ["ml"]
+#   url: "https://www.tensorflow.org/"
 
-- name: Scikit-learn
-  logo: /images/sections/skills/sklearn.png
-  summary: "Main workhorse for tabular data analysis and ML. I use it as a first, broad brush tool for for time series analysis, classification, regression and clustering problems on structured data."
-  categories: ["ml", "main"]
-  url: "https://scikit-learn.org/stable/"
+# - name: Scikit-learn
+#   logo: /images/sections/skills/sklearn.png
+#   summary: "Main workhorse for tabular data analysis and ML. I use it as a first, broad brush tool for for time series analysis, classification, regression and clustering problems on structured data."
+#   categories: ["ml", "main"]
+#   url: "https://scikit-learn.org/stable/"
 
-- name: Numpy
-  logo: /images/sections/skills/numpy.png
-  summary: "Main tool for numerical computing. I use it to vectorize and parallelize code for numerical simulations wherever possible."
-  categories: ["data","ml", "main"]
-  url: "https://numpy.org/"
+# - name: Numpy
+#   logo: /images/sections/skills/numpy.png
+#   summary: "Main tool for numerical computing. I use it to vectorize and parallelize code for numerical simulations wherever possible."
+#   categories: ["data","ml", "main"]
+#   url: "https://numpy.org/"
 
-- name: Pandas
-  logo: /images/sections/skills/pandas.png
-  summary: "Main tool for data analysis. I use it to load, clean, transform and visualize data."
-  categories: ["data","ml", "main"]
-  url: "https://pandas.pydata.org/"
+# - name: Pandas
+#   logo: /images/sections/skills/pandas.png
+#   summary: "Main tool for data analysis. I use it to load, clean, transform and visualize data."
+#   categories: ["data","ml", "main"]
+#   url: "https://pandas.pydata.org/"
 
-- name: Polars
-  logo: /images/sections/skills/polars.png
-  summary: "Main tool for data analysis. I use it to load, clean, transform and visualize data."
-  categories: ["data","ml"]
-  url: "https://pola.rs/"
+# - name: Polars
+#   logo: /images/sections/skills/polars.png
+#   summary: "Main tool for data analysis. I use it to load, clean, transform and visualize data."
+#   categories: ["data","ml"]
+#   url: "https://pola.rs/"
 
-- name: SciPy
-  logo: /images/sections/skills/scipy.jpg
-  summary: "Main tool for scientific computing. I use it to perform numerical simulations and optimizations."
-  categories: ["data","ml"]
-  url: "https://scipy.org/"
+# - name: SciPy
+#   logo: /images/sections/skills/scipy.jpg
+#   summary: "Main tool for scientific computing. I use it to perform numerical simulations and optimizations."
+#   categories: ["data","ml"]
+#   url: "https://scipy.org/"
 
-- name: Hugging Face
-  logo: /images/sections/skills/hf.png
-  summary: "Main tool for LLM prototyping. I use it to train, fine-tune and deploy LLMs."
-  categories: ["ml", "main"]
-  url: "https://huggingface.co/"
+# - name: Hugging Face
+#   logo: /images/sections/skills/hf.png
+#   summary: "Main tool for LLM prototyping. I use it to train, fine-tune and deploy LLMs."
+#   categories: ["ml", "main"]
+#   url: "https://huggingface.co/"
 
-- name: LangChain
-  logo: /images/sections/skills/langchain.jpg
-  summary: "One of the tools for hooking LLMs to other tools and services."
-  categories: ["ml"]
-  url: "https://langchain.com/"
+# - name: LangChain
+#   logo: /images/sections/skills/langchain.jpg
+#   summary: "One of the tools for hooking LLMs to other tools and services."
+#   categories: ["ml"]
+#   url: "https://langchain.com/"
 
-- name: DSPy
-  logo: /images/sections/skills/dspy.png
-  summary: "New code-oriented agentic framework for LLMs."
-  categories: ["ml"]
-  url: "https://dspy.readthedocs.io/en/latest/"
+# - name: DSPy
+#   logo: /images/sections/skills/dspy.png
+#   summary: "New code-oriented agentic framework for LLMs."
+#   categories: ["ml"]
+#   url: "https://dspy.readthedocs.io/en/latest/"
 
-- name: Ollama
-  logo: /images/sections/skills/ollama.png
-  summary: "Main engine for local LLM prototyping."
-  categories: ["ml", "main"]
-  url: "https://ollama.com/"
+# - name: Ollama
+#   logo: /images/sections/skills/ollama.png
+#   summary: "Main engine for local LLM prototyping."
+#   categories: ["ml", "main"]
+#   url: "https://ollama.com/"
 
 # - name: Docker
 #   logo: /images/sections/skills/docker.svg
