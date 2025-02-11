@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Accomplishments
+  name: Courses
   id: accomplishments
   enable: true
   weight: 9
@@ -11,36 +11,42 @@ section:
 
 # Your accomplishments
 accomplishments:
-- name: Linux Foundation System Administrator
-  timeline: "March 2018 - March 2019"
+- name: AI Devs 3 - Agents
+  timeline: "December 2024 - January 2025"
   organization:
-    name: Linux Foundation
-    url: https://www.linuxfoundation.org
-  courseOverview: This course helps to understand the key concepts such as networking, storage, security, maintenance, logging and monitoring, application lifecycle, troubleshooting, API object primitives etc. It also help to grow the ability to establish basic use-cases for end users.
-  certificateURL: "https://example.com"
+    name: AI Devs
+    url: https://www.aidevs.pl
 
-- name: Machine Learning
-  timeline: "Jun 2020 - Jan 2021"
-  organization:
-    name: Coursera
-    url: https://www.coursera.org
-  courseOverview: "This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition. Topics include: (i) Supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural networks). (ii) Unsupervised learning (clustering, dimensionality reduction, recommender systems, deep learning). (iii) Best practices in machine learning (bias/variance theory; innovation process in machine learning and AI)."
-  certificateURL: "https://example.com"
+  courseOverview: This course was a comprehensive, hands-on introduction to building multi-model LLM agentic systems. It covered prompt engineering and injection, multi-modal processing, graph and vector databases, different versions of RAG - all using both cloud based and local solutions.
+  certificateURL: "https://credsverse.com/credentials/189e21ba-fae5-4d5e-9c64-96f8a6c5c549"
 
-- name: Grokking the System Design Interview
-  timeline: "Jan 2018 - Sept 2018"
+- name: Python Software Design Mindset
+  timeline: "October 2023 - November 2023"
   organization:
-    name: educative
-    url: https://www.educative.io
-  courseOverview: This course is a complete guide to master the SDIs. It is created by hiring managers who’ve been working at Google, Facebook, Microsoft, and Amazon. We've carefully chosen a set of questions that have not only been repeatedly asked at top companies, but also provide a thorough experience to handle any system design problem.
-  certificateURL: "https://example.com"
+    name: ArjanCodes
+    url: https://www.arjancodes.com
 
-- name: Mastering Multithreading Programming with Go (Golang)
-  timeline: "Nov 2017 - Mar 2018"
+  courseOverview: "This is probably the best Python specific course when it comes to good software design practices. It covers not only modern software patterns in Pythonic flavour, but also provides solid guidelines on how to write robust, understandable and decoupled code. in general (both in Object Oriented and Functional paradigms)."
+  certificateURL: "https://app.kajabi.com/certificates/3f8889b8"
+
+- name: Fast.ai course V2
+  timeline: "November 2020 - January 2021"
   organization:
-    name: Udemy
-    url: https://www.udemy.com
-  courseOverview: Discover how to create responsive and high performance software. Develop programs with Golang that are highly Concurrent and Parallel. Improve your programming skills in Go with more advanced, multithreading topics.
-  certificateURL: "https://example.com"
+    name: Fast AI
+    url: https://www.fast.ai
+  courseOverview: This course is a great blend of theory and practice. It goes deep into understanding (and implementing from scratch) the most important concepts of deep learning. On the other hand it offers a high level abstractions enabling easy prototyping and deployment of complex models.
+  # certificateURL: "https://example.com"
+
+- name: Complete Machine Learning and Data Science Bootcamp
+  timeline: "July 2020 - September 2020"
+  organization:
+    name: Zero to Mastery on Udemy
+
+    url: https://zerotomastery.io/
+  courseOverview: This was my first general ML course. It provided a broad introduction to machine learning in different domains - from supervised learning to unsupervised learning- and using different data types (tabular data, images, NLP tasks).
+  certificateURL: "https://www.udemy.com/certificate/UC-15fa7540-5d5b-479c-b9e8-48e380578e91/"
+
+
+
  
 

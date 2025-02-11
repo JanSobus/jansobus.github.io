@@ -10,95 +10,106 @@ section:
   # hideTitle: true
 
 degrees:
-- name: Ph.D in Quantum Cryptography
+- name: Ph.D in Physics
   icon: fa-microscope
-  timeframe: 2016-2020
+  timeframe: 2013-2016
   institution:
-    name: ABC University of Technology
-    url: "#"
-    logo: /images/sections/education/tech_college.png
+    name: Adam Mickiewicz University
+    url: "https://amu.edu.pl/en"
+    logo: /images/sections/education/amu.jpg
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/education/tech_college.png
-  grade: #(optional)
-    scale: CGPA
-    achieved: 3.6
-    outOf: 4
-  publications: #(optional)
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    url: "#"
-  - title: Fusce eu augue ut odio porttitor pulvinar.
-    url: "#"
-  - title: Nullam vitae orci tincidunt purus viverra pulvinar.
-    url: "#"
-- name: B.Sc. in Computer Science & Engineering
+  # publications: #(optional)
+  # - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  #   url: "#"
+  # - title: Fusce eu augue ut odio porttitor pulvinar.
+  #   url: "#"
+  # - title: Nullam vitae orci tincidunt purus viverra pulvinar.
+    # url: "#"
+  customSections:
+    - name: Thesis
+      content: <a href="https://repozytorium.amu.edu.pl/items/cadde4bd-cc75-4f9d-84a3-9160584646bb" target="_blank">Optimization of charge separation in organic dye-sensitized solar cells (DSSCs) with different nanostructure films and redox mediators.</a>
+        
+    - name: Research
+      content: | 
+        <div style="text-align: justify">My PhD was focused on the study of new generation of hybrid organic-inorganic solar cells - Dye-sensitized solar cells (DSSCs). 
+        It included both experimental (spectroscopy, device fabrication and evaluation) and theoretical (modeling of the charge transfer processes in the time ranges from femtoseconds to milliseconds) work.
+        I also worked on the modelling of tandem (multi-junction) solar cells.</div>
+    - name: Supervisor
+      content: <a href="http://marziol.home.amu.edu.pl/">Prof. Marcin Ziółek </a>
+- name: M.Sc. in Applied Physics (Nanotechnology)
   icon: fa-graduation-cap
-  timeframe: 2012-2016
+  timeframe: 2011-2012
   institution:
-    name: University of XYZ
-    url: "#"
-    logo: /images/sections/education/university.jpg
+    name: Gdansk University of Technology
+    url: "https://www.pg.gda.pl/en"
+    logo: /images/sections/education/pg.jpg
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/education/university.jpg
   grade: #(optional)
-    scale: CGPA
-    achieved: 3.5
-    outOf: 4
-  takenCourses: #(optional)
-    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
-    showGrades: true
-    collapseAfter: 3
-    courses:
-    - name: Data Structures and Algorithm
-      achieved: 3.75
-      outOf: 4
-    - name: Network Security
-      achieved: 3.80
-      outOf: 4
-    - name: Operating System
-      achieved: 3.5
-      outOf: 4
-    - name: Artificial Intelligent
-      achieved: 3.75
-      outOf: 4
-  publications: #(optional)
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    url: "#"
-  - title: Fusce eu augue ut odio porttitor pulvinar.
-    url: "#"
+    scale: GPA
+    achieved: 5.2
+    outOf: 5.5
+  # takenCourses: #(optional)
+  #   # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+  #   showGrades: true
+  #   collapseAfter: 3
+  #   courses:
+  #   - name: Data Structures and Algorithm
+  #     achieved: 3.75
+  #     outOf: 4
+  #   - name: Network Security
+  #     achieved: 3.80
+  #     outOf: 4
+  #   - name: Operating System
+  #     achieved: 3.5
+  #     outOf: 4
+  #   - name: Artificial Intelligent
+  #     achieved: 3.75
+  #     outOf: 4
+  # publications: #(optional)
+  # - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  #   url: "#"
+  # - title: Fusce eu augue ut odio porttitor pulvinar.
+  #   url: "#"
   extracurricularActivities: #(optional)
-  - In vitae facilisis est, eget porta sem.
-  - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
-  - Duis sed massa feugiat, ornare justo et, aliquam est.
-  - Pellentesque ut fringilla magna.
-  custonSections: #(optional)
+  - Chairmen of the Material Engineering Student Committee
+  - Active member of the Physics Student Committee
+  - Multiple national and international conferences, workshops and poster presentations
+  customSections: #(optional)
     - name: Thesis
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      content: MnO<sub>4</sub> covered graphene based nanocomposite as electrode material for supercapacitors
     - name: Supervisor
-      content: Fusce eu augue ut odio porttitor pulvinar.
-- name: Higher Secondary School Certificate
+      content: <a href="https://pg.edu.pl/en/p/boguslaw-kusz-3333">Prof. Bogusław Kusz</a>
+- name: B.Sc. in Applied Physics (Nanotechnology)
+
   icon: fa-university
-  timeframe: 2010-2012
+  timeframe: 2007-2011
   institution:
-    name: MST College of Science
-    url: "#"
-    logo: /images/sections/education/science_college.png
+    name: Gdansk University of Technology 
+    url: "https://www.pg.gda.pl/en"
+    logo: /images/sections/education/pg.jpg
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/education/science_college.png
   grade: #(optional)
     scale: GPA
-    achieved: 5
-    outOf: 5
+    achieved: 5.05
+    outOf: 5.5
   extracurricularActivities: #(optional)
-  - In vitae facilisis est, eget porta sem.
-  - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
-  - Duis sed massa feugiat, ornare justo et, aliquam est.
-  - Pellentesque ut fringilla magna.
-- name: Secondary School Certificate
-  icon: fa-school
-  timeframe: 2005-2010
-  institution:
-    name: JK School of Science
-  grade: #(optional)
-    scale: GPA
-    achieved: 4.5
-    outOf: 5
+  - Active member of the Physics Student Committee
+  - Co-organizer of the Baltic Festival of Science
+  customSections: #(optional)
+  - name: Thesis
+    content: Graphene films grown on the thin copper foils with the help of the chemical vapour deposition
+  - name: Supervisor
+    content: <a href="https://pg.edu.pl/en/p/boguslaw-kusz-3333">Prof. Bogusław Kusz</a>
+# - name: Secondary School Certificate
+
+#   icon: fa-school
+#   timeframe: 2005-2010
+#   institution:
+#     name: JK School of Science
+#   grade: #(optional)
+#     scale: GPA
+#     achieved: 4.5
+#     outOf: 5

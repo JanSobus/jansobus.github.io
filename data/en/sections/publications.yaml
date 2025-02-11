@@ -12,71 +12,694 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: "Machine Learning"
-  filter: "machinelearning"
-- name: "Image Processing"
-  filter: "image-processing"
-- name: Security
-  filter: "security"
+- name: "Solar Cells"
+  filter: "sc"
+- name: "Light Emitting Devices"
+  filter: "leds"
+- name: "AI"
+  filter: "ai"
+- name: "Patents"
+  filter: "patents"
 
 # your publications
 publications:
-- title: An Example Paper on Machine Learning
-  publishedIn:
-    name: 2020 IEEE Region Symposium (TENSYMP)
-    date: 7 June 2020
-    url: https://example.com
-  authors:
-  - name: Dr. Madman
-    url: https://example.com
-  - name: Dr. Lessmad
-    url: https://example.com
-  - name: Dr. Moremad
-    url: https://example.com
-  - name: Dr. Goodman
-    url: https://example.com
-  paper:
-    summary: Voluptate in id id voluptate laboris. Minim mollit aliquip sit aliqua ut exercitation voluptate eiusmod consequat pariatur sunt enim veniam. Velit esse tempor laboris anim tempor officia. Magna non labore duis do esse sit do ipsum culpa. Officia consequat id non duis culpa dolor. Excepteur magna non nostrud cupidatat aute aliqua aliquip.
-    url: https://example.com
-  categories: ["machinelearning","image-processing"]
-  tags: ["Machine Learning", "Autonomous Driving", "Computer Vision"]
+- title: "Triplet quenching"
 
-- title: An Sample Paper on Image Processing
   publishedIn:
-    name: 2020 IEEE Region Symposium (TENSYMP)
-    date: 7 June 2020
-    url: https://example.com
+    name: "Patent"
+    date: "2024"
+    url: "https://patents.google.com/"
   authors:
-  - name: Dr. Madman
-    url: https://example.com
-  - name: Dr. Lessmad
-    url: https://example.com
-  - name: Dr. Moremad
-    url: https://example.com
-  - name: Dr. Goodman
-    url: https://example.com
+  - name: "VTN Mai"
+    url: "https://cope.centre.uq.edu.au/profile/443/van-mai"
+  - name: "SC Lo"
+    url: "https://scmb.uq.edu.au/profile/1260/shih-chun-lo"
+  - name: "V Ahmad"
+    url: "https://eng.anu.edu.au/people/viqar-ahmad/"
+  - name: "J Sobus"
+    url: ""
+  - name: "EB Namdas"
+    url: "https://smp.uq.edu.au/profile/206/ebinazar-namdas"
   paper:
-    summary: Ullamco magna minim cupidatat Lorem ea ex aliqua fugiat et. Dolor quis cillum ea duis irure et commodo aliquip consectetur ullamco labore ut anim nisi. Commodo reprehenderit est consectetur tempor adipisicing occaecat exercitation amet do aliquip dolor do irure. Labore officia ut magna pariatur reprehenderit et ex sit sunt. Magna proident ullamco adipisicing sit.
-    url: https://example.com
-  categories: ["image-processing"]
-  tags: ["Image Processing", "Computer Vision"]
+    summary: "Research focusing on triplet quenching mechanisms in organic semiconductors."
+    url: "https://patents.google.com/patent/US20240008358A1/en"
+  categories: ["patents","leds"]
+  tags: ["Triplet quenching", "Light Emitting Devices"]
 
-- title: An Example Paper on Security
+- title: "Digital Service Transformation: Pathways to human and economic wellbeing White Paper"
   publishedIn:
-    name: 2020 IEEE Region Symposium (TENSYMP)
-    date: 7 June 2020
-    url: https://example.com
+    name: "UQ"
+    date: "2023"
+    url: "www.uq.edu.au"
   authors:
-  - name: Dr. Madman
-    url: https://example.com
-  - name: Dr. Lessmad
-    url: https://example.com
-  - name: Dr. Moremad
-    url: https://example.com
-  - name: Dr. Goodman
-    url: https://example.com
+  - name: "Jan Sobus"
+    url: ""
+  - name: "et al."
+    url: ""
+  # ... and many more authors
   paper:
-    summary: Dolor ad cupidatat pariatur nulla ipsum ex ullamco nisi anim ullamco. Dolore elit esse in exercitation minim aliqua. Amet velit incididunt magna laboris. Proident reprehenderit deserunt ad officia duis dolor. Tempor nostrud ullamco ullamco sint deserunt cupidatat irure minim consectetur nulla adipisicing sunt.
-    url: https://example.com
-  categories: ["security"]
-  tags: ["Machine Learning", "Autonomous Driving", "Machine Vision"]
+    summary: "This White Paper, resulting from a Brisbane roundtable in November 2022, brings together insights from 64 participants including industry representatives and academics to address challenges and opportunities in digital service transformation across various sectors including financial services, health services, construction, consulting, tourism, and government."
+    url: "https://espace.library.uq.edu.au/view/UQ:aed4918/digital_service_transformation_23.pdf"
+  categories: ["ai"]
+  tags: ["AI in business", "Business-research engagement"]
+
+- title: "Controlling triplet–triplet upconversion and singlet-triplet annihilation in organic light-emitting diodes for injection lasing"
+  publishedIn:
+    name: "Communications Materials"
+    date: "2022"
+    url: "https://www.nature.com/commsmat/"
+  authors:
+  - name: "Atul Shukla"
+    url: "https://www.uni-potsdam.de/en/pwm/group-members-1"
+  - name: "Monirul Hasan"
+    url: "https://www.linkedin.com/in/monirulhasan1/?originalSubdomain=au"
+  - name: "Gangadhar Banappanavar"
+    url: "https://liu.se/en/employee/ganba23"
+  - name: "Viqar Ahmad"
+    url: "https://eng.anu.edu.au/people/viqar-ahmad/"
+  - name: "Jan Sobus"
+    url: ""
+  - name: "Evan G Moore"
+    url: "https://scmb.uq.edu.au/profile/84/evan-moore"
+  - name: "Dinesh Kabra"
+    url: "https://www.phy.iitb.ac.in/en/employee-profile/dinesh-kabra"
+  - name: "Shih-Chun Lo"
+    url: "https://scmb.uq.edu.au/profile/1260/shih-chun-lo"
+  - name: "Ebinazar B Namdas"
+    url: "https://smp.uq.edu.au/profile/206/ebinazar-namdas"
+  paper:
+    summary: "This research demonstrates how triplet excitons can positively contribute to electrically-driven organic lasing through triplet-triplet upconversion (TTU), while emphasizing the importance of minimizing singlet-triplet annihilation (STA) for optimal performance."
+    url: "https://www.nature.com/articles/s43246-022-00248-0"
+  categories: ["leds"]
+  tags: ["Organic lasing", "Triplet management"]
+
+- title: "Probing polaron-induced exciton quenching in TADF based organic light-emitting diodes"
+  publishedIn:
+    name: "Nature communications"
+    date: "2022"
+    url: "https://www.nature.com/ncomms/"
+  authors:
+  - name: "Monirul Hasan"
+    url: "https://www.linkedin.com/in/monirulhasan1/?originalSubdomain=au"
+  - name: "Siddhartha Saggar"
+    url: "https://www.murawskilab.com/group"
+  - name: "Atul Shukla"
+    url: "https://www.uni-potsdam.de/en/pwm/group-members-1"
+  - name: "Fatima Bencheikh"
+    url: "https://www.cstf.kyushu-u.ac.jp/~adachilab/lab/?page_id=12215"
+  - name: "Jan Sobus"
+    url: ""
+  - name: "Sarah KM McGregor"
+    url: "https://scholar.google.com.au/citations?user=fJ0hfgQAAAAJ&hl=en"
+  - name: "Chihaya Adachi"
+    url: "https://www.cstf.kyushu-u.ac.jp/~adachilab/lab/?page_id=237"
+  - name: "Shih-Chun Lo"
+    url: "https://scmb.uq.edu.au/profile/1260/shih-chun-lo"
+  - name: "Ebinazar B Namdas"
+    url: "https://smp.uq.edu.au/profile/206/ebinazar-namdas"
+  paper:
+    summary: "This study investigates polaron-induced exciton quenching in TADF-based OLEDs, examining singlet-polaron annihilation (SPA) and triplet-polaron annihilation (TPA) under steady-state conditions and their contributions to efficiency roll-off, using experimentally obtained parameters."
+    url: "https://www.nature.com/articles/s41467-021-27739-x"
+  categories: ["leds"]
+  tags: ["TADF materials", "OLEDs"]
+
+- title: "Solid cyclooctatetraene-based triplet quencher demonstrating excellent suppression of singlet–triplet annihilation in optical and electrical excitation"
+  publishedIn:
+    name: "Nature communications"
+    date: "2020"
+    url: "https://www.nature.com/ncomms/"
+  authors:
+  - name: "Van TN Mai"
+    url: "https://cope.centre.uq.edu.au/profile/443/van-mai"
+  - name: "Viqar Ahmad"
+    url: "https://eng.anu.edu.au/people/viqar-ahmad/"
+  - name: "Masashi Mamada"
+    url: "https://hatakeyama-lab.kuchem.kyoto-u.ac.jp/mamada-2/"
+  - name: "Toshiya Fukunaga"
+    url: "https://www.s.u-tokyo.ac.jp/en/people/fukunaga_toshiya/"
+  - name: "Atul Shukla"
+    url: "https://www.uni-potsdam.de/en/pwm/group-members-1"
+  - name: "Jan Sobus"
+    url: ""
+  - name: "Gowri Krishnan"
+    url: "https://researchnow.flinders.edu.au/en/persons/gowri-krishnan"
+  - name: "Evan G Moore"
+    url: "https://scmb.uq.edu.au/profile/84/evan-moore"
+  - name: "Gunther G Andersson"
+    url: "https://www.flinders.edu.au/people/gunther.andersson"
+  - name: "Chihaya Adachi"
+    url: "https://www.cstf.kyushu-u.ac.jp/~adachilab/lab/?page_id=237"
+  - name: "Ebinazar B Namdas"
+    url: "https://smp.uq.edu.au/profile/206/ebinazar-namdas"
+  - name: "Shih-Chun Lo"
+    url: "https://scmb.uq.edu.au/profile/1260/shih-chun-lo"
+  paper:
+    summary: "This research presents the design and synthesis of a solid-state organic triplet quencher and its integration with a solution processable bis-stilbene-based laser dye, demonstrating complete suppression of singlet-triplet annihilation and improved photostability under continuous wave excitation."
+    url: "https://www.nature.com/articles/s41467-020-19437-x"
+  categories: ["leds"]
+  tags: ["Triplet management", "OLEDs", "Organic lasing"]
+
+- title: "Triplet-Triplet Upconversion in Organic Light-Emitting Diodes: Implications to Injection Lasing"
+  publishedIn:
+    name: "Preprint"
+    date: "2020"
+    url: "https://www.researchsquare.com/"
+  authors:
+  - name: "Atul Shukla"
+    url: "https://www.uni-potsdam.de/en/pwm/group-members-1"
+  - name: "Monirul Hasan"
+    url: "https://www.linkedin.com/in/monirulhasan1/?originalSubdomain=au"
+  - name: "Gangadhar Banappanavar"
+    url: "https://liu.se/en/employee/ganba23"
+  - name: "Viqar Ahmad"
+    url: "https://eng.anu.edu.au/people/viqar-ahmad/"
+  - name: "Jan Sobus"
+    url: ""
+  - name: "Evan Moore"
+    url: "https://scmb.uq.edu.au/profile/84/evan-moore"
+  - name: "Dinesh Kabra"
+    url: "https://www.phy.iitb.ac.in/en/employee-profile/dinesh-kabra"
+  - name: "Shih-Chun Lo"
+    url: "https://scmb.uq.edu.au/profile/1260/shih-chun-lo"
+  - name: "Ebinazar Namdas"
+    url: "https://smp.uq.edu.au/profile/206/ebinazar-namdas"
+  paper:
+    summary: "This work demonstrates the positive contribution of triplet excitons for electrically driven organic lasers, studying a model fluorescence material and showing how triplet-triplet exciton upconversion processes can significantly reduce threshold current densities required for lasing emission, while emphasizing the importance of minimizing singlet-triplet exciton annihilation."
+    url: "https://d1wqtxts1xzle7.cloudfront.net/85267438/v1-libre.pdf?1651396568=&response-content-disposition=inline%3B+filename%3DTriplet_Triplet_Upconversion_in_Organic.pdf&Expires=1738715464&Signature=SDLh7jH6WK5BAT7XlkVkKrSeFs0WKJPTsrPrWmUtuE4dAb4BhnFzSxu4LucIq5XryOuu9~LKTpNhVNvoARICeXJ6Mk-QPnXt0nv1tu--FOafyDFgjG72qg1EwEZhiYny7xk8Z34f2HuNa4g-x4QmShecfW6r46OPgaeUl49MOUFGDZ-NmVgYAVueFep-5hoGMFLytMekVFkgaeJzpO7wMcLyVDTfGprtftPX64cyOOecgEQ~JlXQBy56iWYyBHtMQ2Ks0Ui8vXkgHbdL3SD4hacbHJFABKtsiNdvuSU8StX~uyR5tPjSDP7LI9pyQnn290-cgbxske2gei9~vG3WUA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
+  categories: ["leds"]
+  tags: ["Triplet management", "Organic lasing"]
+
+- title: "High EQE and high brightness solution‐processed TADF light‐emitting transistors and OLEDs"
+  publishedIn:
+    name: "Advanced Optical Materials"
+    date: "2020"
+    url: "https://onlinelibrary.wiley.com/journal/21951071"
+  authors:
+  - name: "Viqar Ahmad"
+    url: "https://eng.anu.edu.au/people/viqar-ahmad/"
+  - name: "Jan Sobus"
+    url: ""
+  - name: "Fatima Bencheikh"
+    url: "https://www.cstf.kyushu-u.ac.jp/~adachilab/lab/?page_id=12215"
+  - name: "Masashi Mamada"
+    url: "https://hatakeyama-lab.kuchem.kyoto-u.ac.jp/mamada-2/"
+  - name: "Chihaya Adachi"
+    url: "https://www.cstf.kyushu-u.ac.jp/~adachilab/lab/?page_id=237"
+  - name: "Shih‐Chun Lo"
+    url: "https://scmb.uq.edu.au/profile/1260/shih-chun-lo"
+  - name: "Ebinazar B Namdas"
+    url: "https://smp.uq.edu.au/profile/206/ebinazar-namdas"
+  paper:
+    summary: "This work demonstrates highly efficient solution processed LEFETs using ACRXTN showing high external quantum efficiencies of ≈1% and on/off ratios at low operating voltages with negligible EQE roll-off. The same emitter achieved high peak EQEs (≈16%) and brightness in solution-processed OLEDs with a simple architecture."
+    url: "https://onlinelibrary.wiley.com/doi/abs/10.1002/adom.202000554"
+
+- title: "Charge and exciton dynamics of OLEDs under high voltage nanosecond pulse: towards injection lasing"
+  publishedIn:
+    name: "Nature Communications"
+    date: "2020"
+    url: "https://www.nature.com/ncomms/"
+  authors:
+  - name: "Viqar Ahmad"
+    url: "https://eng.anu.edu.au/people/viqar-ahmad/"
+  - name: "Jan Sobus"
+    url: ""
+  - name: "Mitchell Greenberg"
+    url: "https://researchonline.jcu.edu.au/view/jcu/2CB4A1EFD346FB18323186339A0FF30D.html"
+  - name: "Atul Shukla"
+    url: "https://www.uni-potsdam.de/en/pwm/group-members-1"
+  - name: "Bronson Philippa"
+    url: "https://portfolio.jcu.edu.au/researchers/bronson.philippa"
+  - name: "Almantas Pivrikas"
+    url: "https://researchportal.murdoch.edu.au/esploro/profile/almantas_pivrikas/overview"
+  - name: "George Vamvounis"
+    url: "https://portfolio.jcu.edu.au/researchers/george.vamvounis"
+  - name: "Ronald White"
+    url: "https://portfolio.jcu.edu.au/researchers/ronald.white/"
+  - name: "Shih-Chun Lo"
+    url: "https://scmb.uq.edu.au/profile/1260/shih-chun-lo"
+  - name: "Ebinazar B Namdas"
+    url: "https://smp.uq.edu.au/profile/206/ebinazar-namdas"
+  paper:
+    summary: "This research provides a comprehensive analysis of charge injection, transport, device on/off dynamics, and exciton processes in Super Yellow OLEDs under high voltage nanosecond pulses, demonstrating complete exciton and charge carrier dynamics from sub-ns to microsecond timescales."
+    url: "https://www.nature.com/articles/s41467-020-18094-4"
+  categories: ["leds"]
+  tags: ["OLEDs", "Charge and exciton dynamics", "Simulation", "Injection lasing"]
+
+- title: "Exciton–exciton annihilation in thermally activated delayed fluorescence emitter"
+  publishedIn:
+    name: "Advanced Functional Materials"
+    date: "2020"
+    url: "https://advanced.onlinelibrary.wiley.com/journal/16163028"
+  authors:
+  - name: "Monirul Hasan"
+    url: "https://www.linkedin.com/in/monirulhasan1/?originalSubdomain=au"
+  - name: "Atul Shukla"
+    url: "https://www.uni-potsdam.de/en/pwm/group-members-1"
+  - name: "Viqar Ahmad"
+    url: "https://eng.anu.edu.au/people/viqar-ahmad/"
+  - name: "Jan Sobus"
+    url: ""
+  - name: "Fatima Bencheikh"
+    url: "https://www.cstf.kyushu-u.ac.jp/~adachilab/lab/?page_id=12215"
+  - name: "Sarah KM McGregor"
+    url: "https://scholar.google.com.au/citations?user=fJ0hfgQAAAAJ&hl=en"
+  - name: "Masashi Mamada"
+    url: "https://hatakeyama-lab.kuchem.kyoto-u.ac.jp/mamada-2/"
+  - name: "Chihaya Adachi"
+    url: "https://www.cstf.kyushu-u.ac.jp/~adachilab/lab/?page_id=237"
+  - name: "Shih‐Chun Lo"
+    url: "https://scmb.uq.edu.au/profile/1260/shih-chun-lo"
+  - name: "Ebinazar B Namdas"
+    url: "https://smp.uq.edu.au/profile/206/ebinazar-namdas"
+  paper:
+    summary: "This work develops a comprehensive exciton quenching model for TADF systems, studying singlet-singlet, singlet-triplet, and triplet-triplet annihilation rate constants using ACRXTN as a model compound under intensity-dependent optical and electrical pulse excitation."
+    url: "https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202000580"
+  categories: ["leds"]
+  tags: ["OLEDs", "TADF materials", "Simulation", "Triplet management"]
+
+- title: "Organic light‐emitting transistors: advances and perspectives"
+  publishedIn:
+    name: "Advanced Functional Materials"
+    date: "2020"
+    url: "https://advanced.onlinelibrary.wiley.com/journal/16163028"
+  authors:
+  - name: "Mujeeb Ullah Chaudhry"
+    url: "https://durham-repository.worktribe.com/person/211209/dr-mujeeb-chaudhry"
+  - name: "Khalid Muhieddine"
+    url: "https://www.linkedin.com/in/khalidmuhieddine/"
+  - name: "Robert Wawrzinek"
+    url: "https://www.linkedin.com/in/robert-wawrzinek/?originalSubdomain=at"
+  - name: "Jan Sobus"
+    url: ""
+  - name: "Kristen Tandy"
+    url: "https://people.smp.uq.edu.au/BenPowell/people.html"
+  - name: "Shih‐Chun Lo"
+    url: "https://scmb.uq.edu.au/profile/1260/shih-chun-lo"
+  - name: "Ebinazar B Namdas"
+    url: "https://smp.uq.edu.au/profile/206/ebinazar-namdas"
+  paper:
+
+    summary: "This comprehensive review explores the fundamentals, working principles, materials, device physics, and architectures of light-emitting transistors (LETs), discussing their development from an optoelectronic curiosity to potential competitors in display technology and injection lasers."
+    url: "https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.201905282"
+  categories: ["leds"]
+  tags: ["Light Emitting FETs", "Simulation", "Review"]
+
+- title: "Deep‐Red Lasing and Amplified Spontaneous Emission from Nature Inspired Bay‐Annulated Indigo Derivatives"
+  publishedIn:
+    name: "Advanced Optical Materials"
+    date: "2020"
+    url: "https://onlinelibrary.wiley.com/journal/21951071"
+  authors:
+  - name: "Atul Shukla"
+    url: "https://www.uni-potsdam.de/en/pwm/group-members-1"
+  - name: "Nicholle R Wallwork"
+    url: "https://aibn.uq.edu.au/profile/10571/nicholle-wallwork"
+  - name: "Xin Li"
+    url: "https://scmb.uq.edu.au/profile/6274/xin-lin"
+  - name: "Jan Sobus"
+    url: ""
+  - name: "Van TN Mai"
+    url: "https://cope.centre.uq.edu.au/profile/443/van-mai"
+  - name: "Sarah KM McGregor"
+    url: "https://scholar.google.com.au/citations?user=fJ0hfgQAAAAJ&hl=en"
+  - name: "Kai-Chen Wu"
+    url: "https://imb.uq.edu.au/profile/1133/kai-chen-wu"
+  - name: "Romain J Lepage"
+    url: "https://www.researchgate.net/profile/Romain-Lepage"
+  - name: "Elizabeth H Krenske"
+    url: "https://scmb.uq.edu.au/profile/999/elizabeth-krenske"
+  - name: "Evan G Moore"
+    url: "https://scmb.uq.edu.au/profile/84/evan-moore"
+  - name: "Ebinazar B Namdas"
+    url: "https://smp.uq.edu.au/profile/206/ebinazar-namdas"
+  - name: "Shih‐Chun Lo"
+    url: "https://scmb.uq.edu.au/profile/1260/shih-chun-lo"
+  paper:
+    summary: "This work presents a new family of solution-processable organic semiconductor laser dyes based on bay-annulated indigo derivatives, achieving excellent photoluminescence quantum yields and low ASE thresholds with deep-red emission when blended in a mixed host system."
+    url: "https://onlinelibrary.wiley.com/doi/abs/10.1002/adom.201901350"
+  categories: ["leds"]
+  tags: ["Light Emitting Diodes", "New Dye synthesis", "Organic lasing"]
+
+- title: "Organic light-emitting field-effect transistor"
+  publishedIn:
+    name: "Patent"
+    date: "2019"
+    url: "https://patents.google.com/"
+  authors:
+  - name: "Fatima Bencheikh"
+    url: "https://www.cstf.kyushu-u.ac.jp/~adachilab/lab/?page_id=12215"
+  - name: "Masashi Mamada"
+    url: "https://hatakeyama-lab.kuchem.kyoto-u.ac.jp/mamada-2/"
+  - name: "Chihaya Adachi"
+    url: "https://www.cstf.kyushu-u.ac.jp/~adachilab/lab/?page_id=237"
+  - name: "Jean-Charles Ribierre"
+    url: "https://ribierre.wp.st-andrews.ac.uk/people/"
+  - name: "Benjamin Namdas Ebinazar"
+    url: "https://smp.uq.edu.au/profile/206/ebinazar-namdas"
+  - name: "Shih-Chun Lo"
+    url: "https://scmb.uq.edu.au/profile/1260/shih-chun-lo"
+  - name: "Jan Ernest Sobus"
+    url: ""
+  - name: "Viqar Ahmad"
+    url: "https://eng.anu.edu.au/people/viqar-ahmad/"
+  paper:
+    summary: "This patent describes an organic light-emitting field-effect transistor containing a delayed fluorescent material, where excitons can be efficiently used for light emission to remarkably enhance the emission efficiency of the transistor while achieving high mobility along with high on/off ratios."
+    url: "https://patents.google.com/patent/WO2019139175A1/en"
+  categories: ["leds","patents"]
+  tags: ["Light Emitting FETs", "Patent"]
+- title: "Mobility Evaluation of [1]Benzothieno[3,2-b][1]benzothiophene Derivatives: Limitation and Impact on Charge Transport"
+  publishedIn:
+    name: "ACS Applied Materials & Interfaces"
+    date: "2018"
+    url: "https://pubs.acs.org/journal/aamick"
+  authors:
+  - name: "Robert Wawrzinek"
+    url: "https://www.linkedin.com/in/robert-wawrzinek/?originalSubdomain=at"
+  - name: "Jan Sobus"
+    url: ""
+  - name: "Mujeeb Ullah Chaudhry"
+    url: "https://durham-repository.worktribe.com/person/211209/dr-mujeeb-chaudhry"
+  - name: "Viqar Ahmad"
+    url: "https://eng.anu.edu.au/people/viqar-ahmad/"
+  - name: "Arnaud Grosjean"
+    url: "https://scholar.google.com.au/citations?user=uM_-eQYAAAAJ&hl=en"
+  - name: "Jack K Clegg"
+    url: "https://scmb.uq.edu.au/profile/1419/jack-clegg"
+  - name: "Ebinazar B Namdas"
+    url: "https://smp.uq.edu.au/profile/206/ebinazar-namdas"
+  - name: "Shih-Chun Lo"
+    url: "https://scmb.uq.edu.au/profile/1260/shih-chun-lo"
+  paper:
+    summary: "This study investigates BTBT derivatives with varying alkyl chain configurations, examining their impact on hole mobilities and charge transport properties, while addressing the debate on mobility overestimation in organic field-effect transistors."
+    url: "https://pubs.acs.org/doi/10.1021/acsami.8b16158"
+  categories: ["leds"]
+  tags: ["Light Emitting FETs", "Charge transport"]
+- title: "High‐speed OLEDs and area‐emitting light‐emitting transistors from a tetracyclic lactim semiconducting polymer"
+  publishedIn:
+    name: "Advanced Optical Materials"
+    date: "2018"
+    url: "https://onlinelibrary.wiley.com/journal/21951071"
+  authors:
+  - name: "Viqar Ahmad"
+    url: "https://eng.anu.edu.au/people/viqar-ahmad/"
+  - name: "Atul Shukla"
+    url: "https://www.uni-potsdam.de/en/pwm/group-members-1"
+  - name: "Jan Sobus"
+    url: ""
+  - name: "Anirudh Sharma"
+    url: "https://anirudhsharma.me/"
+  - name: "Desta Gedefaw"
+    url: "https://www.linkedin.com/in/desta-antenehe-gedefaw-6659a236/?originalSubdomain=fj"
+  - name: "Gunther G Andersson"
+    url: "https://www.flinders.edu.au/people/gunther.andersson"
+  - name: "Mats R Andersson"
+    url: "https://www.flinders.edu.au/people/mats.andersson"
+  - name: "Shih‐Chun Lo"
+    url: "https://scmb.uq.edu.au/profile/1260/shih-chun-lo"
+  - name: "Ebinazar B Namdas"
+    url: "https://smp.uq.edu.au/profile/206/ebinazar-namdas"
+  paper:
+    summary: "This work reports on high-speed OLEDs and high-performance hybrid light-emitting transistors using a new solution processable luminescent material (PTNT). The OLEDs achieve peak brightness of 8×105 cd m−2 and 40 MHz modulation frequency under 10 ns pulse operation, significantly higher than commercial LEDs used for visible light communication."
+    url: "https://onlinelibrary.wiley.com/doi/abs/10.1002/adom.201800768"
+  categories: ["leds"]
+  tags: ["Light Emitting FETs", "Charge transport","Injection lasing"]
+
+- title: "Low amplified spontaneous emission threshold and efficient electroluminescence from a carbazole derivatized excited-state intramolecular proton transfer dye"
+  publishedIn:
+    name: "ACS Photonics"
+    date: "2018"
+    url: "https://pubs.acs.org/journal/apchd5"
+  authors:
+  - name: "Van TN Mai"
+    url: "https://cope.centre.uq.edu.au/profile/443/van-mai"
+  - name: "Atul Shukla"
+    url: "https://www.uni-potsdam.de/en/pwm/group-members-1"
+  - name: "Masashi Mamada"
+    url: "https://hatakeyama-lab.kuchem.kyoto-u.ac.jp/mamada-2/"
+  - name: "Satoshi Maedera"
+    url: "https://www.cstf.kyushu-u.ac.jp/~adachilab/lab/?page_id=13079"
+  - name: "Paul E Shaw"
+    url: "https://cope.centre.uq.edu.au/profile/18/paul-shaw"
+  - name: "Jan Sobus"
+    url: ""
+  - name: "Ilene Allison"
+    url: "https://cope.centre.uq.edu.au/profile/383/ilene-allison"
+  - name: "Chihaya Adachi"
+    url: "https://www.cstf.kyushu-u.ac.jp/~adachilab/lab/?page_id=237"
+  - name: "Ebinazar B Namdas"
+    url: "https://smp.uq.edu.au/profile/206/ebinazar-namdas"
+  - name: "Shih-Chun Lo"
+    url: "https://scmb.uq.edu.au/profile/1260/shih-chun-lo"
+  paper:
+    summary: "This work reports a new organic semiconducting laser dye (HBT-Cz) with remarkably low ASE threshold in both solution and film states, achieving the lowest reported waveguide loss coefficient for solution-processed organic semiconductors, while also demonstrating efficient electroluminescence in OLEDs."
+    url: "https://pubs.acs.org/doi/10.1021/acsphotonics.8b00907"
+  categories: ["leds"]
+  tags: ["OLEDs", "New Dye","Organic lasing"]
+
+
+- title: "High Performance p‐and n‐Type Light‐Emitting Field‐Effect Transistors Employing Thermally Activated Delayed Fluorescence"
+  publishedIn:
+    name: "Advanced Functional Materials"
+    date: "2018"
+    url: "https://onlinelibrary.wiley.com/journal/16163028"
+  authors:
+  - name: "Jan Sobus"
+    url: ""
+  - name: "Fatima Bencheikh"
+    url: "https://www.cstf.kyushu-u.ac.jp/~adachilab/lab/?page_id=12215"
+  - name: "Masashi Mamada"
+    url: "https://hatakeyama-lab.kuchem.kyoto-u.ac.jp/mamada-2/"
+  - name: "Robert Wawrzinek"
+    url: "https://www.linkedin.com/in/robert-wawrzinek/?originalSubdomain=at"
+  - name: "Jean‐Charles Ribierre"
+    url: "https://ribierre.wp.st-andrews.ac.uk/people/"
+  - name: "Chihaya Adachi"
+    url: "https://www.cstf.kyushu-u.ac.jp/~adachilab/lab/?page_id=237"
+  - name: "Shih‐Chun Lo"
+    url: "https://scmb.uq.edu.au/profile/1260/shih-chun-lo"
+  - name: "Ebinazar B Namdas"
+    url: "https://smp.uq.edu.au/profile/206/ebinazar-namdas"
+  paper:
+    summary: "This work presents an alternative strategy for triplet usage in LEFETs using thermally activated delayed fluorescence (TADF). The study demonstrates devices employing a TADF capable material (4CzIPN) in both n-type and p-type configurations, showing excellent electrical characteristics."
+    url: "https://advanced.onlinelibrary.wiley.com/doi/am-pdf/10.1002/adfm.201800340"
+  categories: ["leds"]
+  tags: ["Light Emitting FETs", "Charge transport","TADF Materials"]
+
+- title: "Interface engineering of solution-processed hybrid organohalide perovskite solar cells"
+  publishedIn:
+    name: "ACS applied materials & interfaces"
+    date: "2018"
+    url: "https://pubs.acs.org/journal/aamick"
+  authors:
+  - name: "Shanshan Zhang"
+    url: "https://academia.kaust.edu.sa/en/persons/shanshan-zhang"
+  - name: "Martin Stolterfoht"
+    url: "https://www.ee.cuhk.edu.hk/en-gb/people/academic-staff/professors/prof-stolterfoht-martin"
+  - name: "Ardalan Armin"
+    url: "https://www.swansea.ac.uk/staff/ardalan.armin/"
+  - name: "Qianqian Lin"
+    url: "https://scholar.google.com.au/citations?user=vyJabXkAAAAJ&hl=en"
+  - name: "Fengshuo Zu"
+    url: "https://scholar.google.de/citations?user=UKEVr-gAAAAJ&hl=en"
+  - name: "Jan Sobus"
+    url: ""
+  - name: "Hui Jin"
+    url: "https://about.uq.edu.au/experts/7681"
+  - name: "Norbert Koch"
+    url: "https://kochlab.de/post/team/prof-dr-norbert-koch/"
+  - name: "Paul Meredith"
+    url: "https://www.swansea.ac.uk/staff/paul.meredith/"
+  - name: "Paul L Burn"
+    url: "https://scmb.uq.edu.au/profile/1203/paul-burn"
+  - name: "Dieter Neher"
+    url: "https://www.uni-potsdam.de/en/pwm/group-members/neher"
+  paper:
+    summary: "This work introduces oxygen plasma treatment as a simple method to modify the surface energy and work function of hydrophobic polymer interlayers for use as p-contacts in perovskite solar cells, enabling improved processing and device performance."
+    url: "https://pubs.acs.org/doi/10.1021/acsami.8b02503"
+  categories: ["sc"]
+  tags: ["Perovskite solar cells", "Interface engineering"]
+
+- title: "Factors Affecting the Performance of Champion Silyl‐Anchor Carbazole Dye Revealed in the Femtosecond to Second Studies of Complete ADEKA‐1 Sensitized Solar Cells"
+  publishedIn:
+    name: "Chemistry–A European Journal"
+    date: "2016"
+    url: "https://chemistry-europe.onlinelibrary.wiley.com/journal/15213765"
+  authors:
+  - name: "Jan Sobuś"
+    url: ""
+  - name: "Błażej Gierczyk"
+    url: "https://chemia.amu.edu.pl/wydzial/struktura-wydzialu/samodzielni-pracownicy-naukowi/blazej-gierczyk"
+  - name: "Gotard Burdziński"
+    url: "https://scholar.google.com/citations?user=j3JR7pAAAAAJ&hl=en"
+  - name: "Mariusz Jancelewicz"
+    url: "https://cnbm.amu.edu.pl/en/staff/dr-mariusz-jancelewicz"
+  - name: "Enrico Polanski"
+    url: "https://github.com/enricopolanski"
+  - name: "Anders Hagfeldt"
+    url: "https://www.uu.se/en/contact-and-organisation/staff?query=XX3873"
+  - name: "Marcin Ziółek"
+    url: "http://marziol.home.amu.edu.pl/"
+  paper:
+    summary: "This study investigates key preparation factors affecting ADEKA-1 solar cells, including dye synthesis routes, co-adsorbent addition, and electrode passivation, revealing the crucial role of electron recombination from titania to the dye in cell performance."
+    url: "https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/chem.201603059"
+  categories: ["sc"]
+  tags: ["DSSCs", "Dye preparation", "Electrode passivation", "Spectroscopy"]
+
+  publications:
+- title: "Effect of solvent variations in the alcothermal synthesis of template-free mesoporous titania for dye-sensitized solar cells applications"
+  publishedIn:
+    name: "Plos one"
+    date: "2016"
+    url: "https://journals.plos.org/plosone/"
+  authors:
+  - name: "Maciej Zalas"
+    url: "https://www.researchgate.net/profile/Maciej-Zalas"
+  - name: "Agata Wawrzyńczak"
+    url: "https://chemia.amu.edu.pl/wydzial/struktura-wydzialu/zaklady/zaklad-chemii-stosowanej/agata-wawrzynczak"
+  - name: "Paulina Półrolniczak"
+    url: "https://www.researchgate.net/profile/Paulina-Polrolniczak"
+  - name: "Jan Sobuś"
+    url: ""
+  - name: "Grzegorz Schroeder"
+    url: "https://cnbm.amu.edu.pl/en/staff/prof-grzegorz-schroeder"
+  - name: "Stefan Jurga"
+    url: "https://cnbm.amu.edu.pl/en/staff/prof-stefan-jurga"
+  - name: "Elena Selli"
+    url: "https://sites.unimi.it/upg/prof-elena-selli/"
+  paper:
+    summary: "This study investigates the synthesis of mesoporous titania materials using various alcohols as solvents in a template-free alcothermal method, characterizing their properties and performance in dye-sensitized solar cells with efficiency values ranging from 0.54% to 4.6%."
+    url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0164670"
+  categories: ["sc"]
+  tags: ["DSSCs", "Alcothermal synthesis", "Electrode preparation"]
+- title: "Effect of different photoanode nanostructures on the initial charge separation and electron injection process in dye sensitized solar cells: a photophysical study with indoline dyes"
+  publishedIn:
+    name: "Materials Chemistry and Physics"
+    date: "2016"
+    url: "https://www.sciencedirect.com/journal/materials-chemistry-and-physics"
+  authors:
+  - name: "Jesús Idígoras"
+    url: "https://www.researchgate.net/profile/Jesus-Idigoras"
+  - name: "Jan Sobuś"
+    url: ""
+  - name: "Mariusz Jancelewicz"
+    url: "https://cnbm.amu.edu.pl/en/staff/dr-mariusz-jancelewicz"
+  - name: "Eneko Azaceta"
+    url: "https://www.e-magic.eu/eneko-azaceta"
+  - name: "Ramon Tena-Zaera"
+    url: "https://www.researchgate.net/profile/Ramon-Tena-Zaera/2"
+  - name: "Juan A Anta"
+    url: "https://scholar.google.com/citations?user=0bRk8voAAAAJ&hl=en"
+  - name: "Marcin Ziółek"
+    url: "http://marziol.home.amu.edu.pl/"
+  paper:
+    summary: "This study investigates ultrafast and fast charge separation processes in complete cells based on various ZnO-based photoanode nanostructures and standard TiO2 nanoparticle layers sensitized with the indoline dye D358, examining different ZnO morphologies and synthesis methods."
+    url: "https://www.sciencedirect.com/science/article/abs/pii/S0254058415304077"
+  categories: ["sc"]
+  tags: ["DSSCs", "Photoanode nanostructures", "Charge separation"]
+
+- title: "Carbazole Dye‐Sensitized Solar Cells Studied from Femtoseconds to Seconds—Effect of Additives in Cobalt‐and Iodide‐Based Electrolytes"
+  publishedIn:
+    name: "ChemSusChem"
+    date: "2015"
+    url: "https://chemistry-europe.onlinelibrary.wiley.com/journal/1864564x"
+  authors:
+  - name: "Jan Sobuś"
+    url: ""
+  - name: "Jacek Kubicki"
+    url: "https://amu.edu.pl/uniwersytet/wyszukiwarka-pracownikow/osoba?id=10004901&alias=Jacek-Kubicki"
+  - name: "Gotard Burdziński"
+    url: "https://scholar.google.com/citations?user=j3JR7pAAAAAJ&hl=en"
+  - name: "Marcin Ziółek"
+    url: "http://marziol.home.amu.edu.pl/"
+  paper:
+    summary: "This comprehensive study examines charge-separation processes in carbazole dye-sensitized solar cells, revealing the importance of fast electron recombination from semiconductor nanoparticles to oxidized dye, and investigating how additives affect charge-transfer dynamics in different electrolytes."
+    url: "https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/cssc.201500628"
+  categories: ["sc"]
+  tags: ["DSSCs", "Electrolytes", "Charge separation"]
+
+- title: "Transient states and the role of excited state self-quenching of indoline dyes in complete dye-sensitized solar cells"
+  publishedIn:
+    name: "Dyes and Pigments"
+    date: "2015"
+    url: "https://www.sciencedirect.com/journal/dyes-and-pigments"
+  authors:
+  - name: "Jan Sobuś"
+    url: ""
+  - name: "Jerzy Karolczak"
+    url: "https://orcid.org/0000-0002-6996-1614"
+  - name: "Dariusz Komar"
+    url: "https://www.researchgate.net/profile/Dariusz-Komar-2"
+  - name: "Juan A Anta"
+    url: "https://scholar.google.com/citations?user=0bRk8voAAAAJ&hl=en"
+  - name: "Marcin Ziółek"
+    url: "http://marziol.home.amu.edu.pl/"
+  paper:
+    summary: "This study investigates the photobehavior of indoline dye D149 on different metal oxide nanoparticles in functioning solar cells, identifying locally excited and charge transfer excited states in electron injection and dye deactivation mechanisms, while examining the effects of coadsorbent concentration and aging on cell performance."
+    url: "https://www.sciencedirect.com/science/article/abs/pii/S0143720814004185"
+  categories: ["sc"]
+  tags: ["DSSCs", "Charge separation", "Spectroscopy"]
+
+- title: "Comparison of TiO<sub>2</sub> and ZnO solar cells sensitized with an indoline dye: time-resolved laser spectroscopy studies of partial charge separation processes"
+  publishedIn:
+    name: "Langmuir"
+    date: "2014"
+
+    url: "https://pubs.acs.org/journal/langd5"
+  authors:
+  - name: "Jan Sobuś"
+    url: ""
+  - name: "Gotard Burdziński"
+    url: "https://scholar.google.com/citations?user=j3JR7pAAAAAJ&hl=en"
+  - name: "Jerzy Karolczak"
+    url: "https://orcid.org/0000-0002-6996-1614"
+  - name: "Jesús Idígoras"
+    url: "https://www.researchgate.net/profile/Jesus-Idigoras"
+  - name: "Juan A Anta"
+    url: "https://scholar.google.com/citations?user=0bRk8voAAAAJ&hl=en"
+  - name: "Marcin Ziółek"
+    url: "http://marziol.home.amu.edu.pl/"
+  paper:
+    summary: "This study compares TiO2 and ZnO-based dye-sensitized solar cells using time-resolved laser spectroscopy, revealing that the superior performance of TiO2 cells is primarily due to more efficient electron injection in the first 100 ps rather than differences in charge collection or dye regeneration processes."
+    url: "https://pubs.acs.org/doi/10.1021/la404782s"
+  categories: ["sc"]
+  tags: ["DSSCs", "Charge separation", "Spectroscopy"]
+
+- title: "Optimization of absorption bands of dye-sensitized and perovskite tandem solar cells based on loss-in-potential values"
+  publishedIn:
+    name: "Physical Chemistry Chemical Physics"
+    date: "2014"
+    url: "https://pubs.rsc.org/en/journals/journalissues/cp#!recentarticles&adv"
+  authors:
+  - name: "Jan Sobuś"
+    url: ""
+  - name: "Marcin Ziółek"
+    url: "http://marziol.home.amu.edu.pl/"
+  paper:
+    summary: "This numerical study investigates optimal bandgaps of light absorbers in tandem solar cell configurations, focusing on dye-sensitized solar cells (DSSCs) and perovskite solar cells (PSCs), examining efficiency limits and potential improvements as functions of loss-in-potential, incident photon to current efficiency, and fill factor."
+    url: "https://pubs.rsc.org/en/content/articlelanding/2014/cp/c4cp01411a"
+  categories: ["sc"]
+  tags: ["DSSCs", "Perovskite solar cells", "Simulation", "Tandem solar cells"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
