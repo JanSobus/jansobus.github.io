@@ -1,6 +1,6 @@
 # some information about you
-name: "জন ডো"
-nickname: "জন"
+name: "Jan Sobus"
+nickname: "Jan"
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "হ্যালো, আমি হলাম"
 image: "images/author/profile.png"
