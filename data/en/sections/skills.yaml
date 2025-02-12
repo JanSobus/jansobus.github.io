@@ -53,44 +53,44 @@ skills:
   categories: ["basic"]
   url: "https://ubuntu.com/"
 
-# - name: Postgres
-#   logo: /images/sections/skills/postgres.svg
-#   summary: "Using PostgreSQL as the main relational database."
-#   categories: ["data"]
-#   url: "https://www.postgresql.org/"
+- name: Postgres
+  logo: /images/sections/skills/postgres.svg
+  summary: "Using PostgreSQL as the main relational database."
+  categories: ["data"]
+  url: "https://www.postgresql.org/"
 
-# - name: DuckDB
-#   logo: /images/sections/skills/duckdb.png
-#   summary: "Using DuckDB as the main database for quick prototyping."
-#   categories: ["data"]
-#   url: "https://duckdb.org/"
+- name: DuckDB
+  logo: /images/sections/skills/duckdb.png
+  summary: "Using DuckDB as the main database for quick prototyping."
+  categories: ["data"]
+  url: "https://duckdb.org/"
 
-# - name: Spark
-#   logo: /images/sections/skills/spark.jpg
-#   summary: "Using Spark as the main framework for big data processing. I've been running it locally and in the cloud with Databricks."
-#   categories: ["data", "cloud"]
-#   url: "https://spark.apache.org/"
+- name: Spark
+  logo: /images/sections/skills/spark.jpg
+  summary: "Using Spark as the main framework for big data processing. I've been running it locally and in the cloud with Databricks."
+  categories: ["data", "cloud"]
+  url: "https://spark.apache.org/"
 
-# - name: Qdrant and Chroma
-#   logo: /images/sections/skills/qdrant.png
-#   summary: "Using Qdrant (cloud) and Chroma (local) as the main vector databases."
-#   categories: ["data","ml"]
-#   url: "https://qdrant.tech/"
+- name: Qdrant and Chroma
+  logo: /images/sections/skills/qdrant.png
+  summary: "Using Qdrant (cloud) and Chroma (local) as the main vector databases."
+  categories: ["data","ml"]
+  url: "https://qdrant.tech/"
 
-# - name: Neo4j
-#   logo: /images/sections/skills/neo4j.png
-#   summary: "Using Neo4j as the main graph database."
-#   categories: ["data","ml"]
+- name: Neo4j
+  logo: /images/sections/skills/neo4j.png
+  summary: "Using Neo4j as the main graph database."
+  categories: ["data","ml"]
 
-# - name: Redis
-#   logo: /images/sections/skills/redis.webp
-#   summary: "Using Redis as the main cache/in memory database."
-#   categories: ["data"]
+- name: Redis
+  logo: /images/sections/skills/redis.webp
+  summary: "Using Redis as the main cache/in memory database."
+  categories: ["data"]
 
-# - name: File storage
-#   logo: /images/sections/skills/file-storage.jpg
-#   summary: "Using Blob Storage (Azure) and S3 (AWS) as the main cloud storage."
-#   categories: ["data","cloud"]
+- name: File storage
+  logo: /images/sections/skills/file-storage.jpg
+  summary: "Using Blob Storage (Azure) and S3 (AWS) as the main cloud storage."
+  categories: ["data","cloud"]
 
 # - name: Python
 #   logo: /images/sections/skills/python.png
