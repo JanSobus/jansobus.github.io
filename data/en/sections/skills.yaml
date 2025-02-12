@@ -41,17 +41,17 @@ skills:
   categories: ["basic","main"]
   url: "https://git-scm.com/"
 
-# - name: Windows
-#   logo: /images/sections/skills/windows.jpg
-#   summary: "Using Windows as one of the main operating systems. Capable of configuring both hardware and software for ML applications and write simple shell scripts if necessary."
-#   categories: ["basic"]
-#   url: "https://www.microsoft.com/en-us/windows"
+- name: Windows
+  logo: /images/sections/skills/windows.jpg
+  summary: "Using Windows as one of the main operating systems. Capable of configuring both hardware and software for ML applications and write simple shell scripts if necessary."
+  categories: ["basic"]
+  url: "https://www.microsoft.com/en-us/windows"
 
-# - name: Linux
-#   logo: /images/sections/skills/linux.png
-#   summary: "Using Linux as one of the main operating systems. Capable of setting up both hardware and software for ML applications. Most familiar with Ubuntu/Debian variants."
-#   categories: ["basic"]
-#   url: "https://ubuntu.com/"
+- name: Linux
+  logo: /images/sections/skills/linux.png
+  summary: "Using Linux as one of the main operating systems. Capable of setting up both hardware and software for ML applications. Most familiar with Ubuntu/Debian variants."
+  categories: ["basic"]
+  url: "https://ubuntu.com/"
 
 # - name: Postgres
 #   logo: /images/sections/skills/postgres.svg
