@@ -94,28 +94,28 @@ skills:
   summary: "Using Blob Storage (Azure) and S3 (AWS) as the main cloud storage."
   categories: ["data","cloud"]
 
-- name: Python
-  logo: /images/sections/skills/python.png
-  summary: "Extensive knowledge of Python language. That's my everyday tool for both data science and software development."
-  categories: ["main", "language"]
-  url: "https://www.python.org/"
+# - name: Python
+#   logo: /images/sections/skills/python.png
+#   summary: "Extensive knowledge of Python language. That's my everyday tool for both data science and software development."
+#   categories: ["main", "language"]
+#   url: "https://www.python.org/"
 
-- name: C
-  logo: /images/sections/skills/C_logo.png
-  summary: "Know basic C programming. Used it for for numerical simulations in early research papers."
-  categories: ["language"]
+# - name: C
+#   logo: /images/sections/skills/C_logo.png
+#   summary: "Know basic C programming. Used it for for numerical simulations in early research papers."
+#   categories: ["language"]
   
-- name: R
-  logo: /images/sections/skills/R_logo.png
-  summary: "Moderately experienced with R language. Used it for statistical analysis and data visualization."
-  categories: ["language"]
-  url: "https://www.r-project.org/"
+# - name: R
+#   logo: /images/sections/skills/R_logo.png
+#   summary: "Moderately experienced with R language. Used it for statistical analysis and data visualization."
+#   categories: ["language"]
+#   url: "https://www.r-project.org/"
 
-- name: HTML and CSS
-  logo: /images/sections/skills/html.png
-  summary: "Basic knowledge of HTML and CSS. Used it for creating simple frontend for my projects (using Jinja templates)."
-  categories: ["language"]
-  url: "https://www.w3schools.com/html/"
+# - name: HTML and CSS
+#   logo: /images/sections/skills/html.png
+#   summary: "Basic knowledge of HTML and CSS. Used it for creating simple frontend for my projects (using Jinja templates)."
+#   categories: ["language"]
+#   url: "https://www.w3schools.com/html/"
 
 - name: SQL
   logo: /images/sections/skills/sql.png
