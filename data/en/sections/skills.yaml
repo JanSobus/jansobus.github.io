@@ -18,7 +18,7 @@ buttons:
 - name: Data
   filter: "data"
 - name: Languages
-  filter: "languages"
+  filter: "language"
 - name: ML and AI
   filter: "ml"
 - name: Cloud and Containers
@@ -117,23 +117,23 @@ skills:
   categories: ["language"]
   url: "https://www.w3schools.com/html/"
 
-# - name: SQL
-#   logo: /images/sections/skills/sql.png
-#   summary: "Moderately experienced with SQL. Used it for querying data sources. Prefer to use DuckDB for local development and Postgres for cloud deployments."
-#   categories: ["language"]
-#   url: "https://www.w3schools.com/sql/"
+- name: SQL
+  logo: /images/sections/skills/sql.png
+  summary: "Moderately experienced with SQL. Used it for querying data sources. Prefer to use DuckDB for local development and Postgres for cloud deployments."
+  categories: ["language"]
+  url: "https://www.w3schools.com/sql/"
 
-# - name: Java
-#   logo: /images/sections/skills/java.png
-#   summary: "Collaborated with Java backend developers on multiple projects. Familiar with the language (can understand code)."
-#   categories: ["language"]
-#   url: "https://www.java.com/"
+- name: Java
+  logo: /images/sections/skills/java.png
+  summary: "Collaborated with Java backend developers on multiple projects. Familiar with the language (can understand code)."
+  categories: ["language"]
+  url: "https://www.java.com/"
 
-# - name: Typescript
-#   logo: /images/sections/skills/typescript.png
-#   summary: "Basic knowledge of Typescript. Explored it for creating simple LLM based applications (as an alternative to Python)."
-#   categories: ["language"]
-#   url: "https://www.typescriptlang.org/"
+- name: Typescript
+  logo: /images/sections/skills/typescript.png
+  summary: "Basic knowledge of Typescript. Explored it for creating simple LLM based applications (as an alternative to Python)."
+  categories: ["language"]
+  url: "https://www.typescriptlang.org/"
 
 
 # - name: Pytorch
