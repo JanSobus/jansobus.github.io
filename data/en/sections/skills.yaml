@@ -136,143 +136,143 @@ skills:
   url: "https://www.typescriptlang.org/"
 
 
-# - name: Pytorch
-#   logo: /images/sections/skills/pytorch.png
-#   summary: "Main framework I use for deep learning. That includes writing custom models, training them, customizing training pipelines, optimizers, loss functions, etc."
-#   categories: ["ml", "main"]
-#   url: "https://pytorch.org/"
+- name: Pytorch
+  logo: /images/sections/skills/pytorch.png
+  summary: "Main framework I use for deep learning. That includes writing custom models, training them, customizing training pipelines, optimizers, loss functions, etc."
+  categories: ["ml", "main"]
+  url: "https://pytorch.org/"
 
-# - name: Tensorflow and Keras
-#   logo: /images/sections/skills/tf.png
-#   summary: "Secondary deep learning framework. I try to migrate existing infrastructure to Pytorch, if possible."
-#   categories: ["ml"]
-#   url: "https://www.tensorflow.org/"
+- name: Tensorflow and Keras
+  logo: /images/sections/skills/tf.png
+  summary: "Secondary deep learning framework. I try to migrate existing infrastructure to Pytorch, if possible."
+  categories: ["ml"]
+  url: "https://www.tensorflow.org/"
 
-# - name: Scikit-learn
-#   logo: /images/sections/skills/sklearn.png
-#   summary: "Main workhorse for tabular data analysis and ML. I use it as a first, broad brush tool for for time series analysis, classification, regression and clustering problems on structured data."
-#   categories: ["ml", "main"]
-#   url: "https://scikit-learn.org/stable/"
+- name: Scikit-learn
+  logo: /images/sections/skills/sklearn.png
+  summary: "Main workhorse for tabular data analysis and ML. I use it as a first, broad brush tool for for time series analysis, classification, regression and clustering problems on structured data."
+  categories: ["ml", "main"]
+  url: "https://scikit-learn.org/stable/"
 
-# - name: Numpy
-#   logo: /images/sections/skills/numpy.png
-#   summary: "Main tool for numerical computing. I use it to vectorize and parallelize code for numerical simulations wherever possible."
-#   categories: ["data","ml", "main"]
-#   url: "https://numpy.org/"
+- name: Numpy
+  logo: /images/sections/skills/numpy.png
+  summary: "Main tool for numerical computing. I use it to vectorize and parallelize code for numerical simulations wherever possible."
+  categories: ["data","ml", "main"]
+  url: "https://numpy.org/"
 
-# - name: Pandas
-#   logo: /images/sections/skills/pandas.png
-#   summary: "Main tool for data analysis. I use it to load, clean, transform and visualize data."
-#   categories: ["data","ml", "main"]
-#   url: "https://pandas.pydata.org/"
+- name: Pandas
+  logo: /images/sections/skills/pandas.png
+  summary: "Main tool for data analysis. I use it to load, clean, transform and visualize data."
+  categories: ["data","ml", "main"]
+  url: "https://pandas.pydata.org/"
 
-# - name: Polars
-#   logo: /images/sections/skills/polars.png
-#   summary: "Main tool for data analysis. I use it to load, clean, transform and visualize data."
-#   categories: ["data","ml"]
-#   url: "https://pola.rs/"
+- name: Polars
+  logo: /images/sections/skills/polars.png
+  summary: "Main tool for data analysis. I use it to load, clean, transform and visualize data."
+  categories: ["data","ml"]
+  url: "https://pola.rs/"
 
-# - name: SciPy
-#   logo: /images/sections/skills/scipy.jpg
-#   summary: "Main tool for scientific computing. I use it to perform numerical simulations and optimizations."
-#   categories: ["data","ml"]
-#   url: "https://scipy.org/"
+- name: SciPy
+  logo: /images/sections/skills/scipy.jpg
+  summary: "Main tool for scientific computing. I use it to perform numerical simulations and optimizations."
+  categories: ["data","ml"]
+  url: "https://scipy.org/"
 
-# - name: Hugging Face
-#   logo: /images/sections/skills/hf.png
-#   summary: "Main tool for LLM prototyping. I use it to train, fine-tune and deploy LLMs."
-#   categories: ["ml", "main"]
-#   url: "https://huggingface.co/"
+- name: Hugging Face
+  logo: /images/sections/skills/hf.png
+  summary: "Main tool for LLM prototyping. I use it to train, fine-tune and deploy LLMs."
+  categories: ["ml", "main"]
+  url: "https://huggingface.co/"
 
-# - name: LangChain
-#   logo: /images/sections/skills/langchain.jpg
-#   summary: "One of the tools for hooking LLMs to other tools and services."
-#   categories: ["ml"]
-#   url: "https://langchain.com/"
+- name: LangChain
+  logo: /images/sections/skills/langchain.jpg
+  summary: "One of the tools for hooking LLMs to other tools and services."
+  categories: ["ml"]
+  url: "https://langchain.com/"
 
-# - name: DSPy
-#   logo: /images/sections/skills/dspy.png
-#   summary: "New code-oriented agentic framework for LLMs."
-#   categories: ["ml"]
-#   url: "https://dspy.readthedocs.io/en/latest/"
+- name: DSPy
+  logo: /images/sections/skills/dspy.png
+  summary: "New code-oriented agentic framework for LLMs."
+  categories: ["ml"]
+  url: "https://dspy.readthedocs.io/en/latest/"
 
-# - name: Ollama
-#   logo: /images/sections/skills/ollama.png
-#   summary: "Main engine for local LLM prototyping."
-#   categories: ["ml", "main"]
-#   url: "https://ollama.com/"
+- name: Ollama
+  logo: /images/sections/skills/ollama.png
+  summary: "Main engine for local LLM prototyping."
+  categories: ["ml", "main"]
+  url: "https://ollama.com/"
 
-# - name: Docker
-#   logo: /images/sections/skills/docker.svg
-#   summary: "Using Docker as the main containerization tool. That includes writing Dockerfiles (including multi-stage builds) and using docker-compose to run multi-service applications."
-#   categories: ["container","main"]
-#   url: "https://www.docker.com/"
+- name: Docker
+  logo: /images/sections/skills/docker.svg
+  summary: "Using Docker as the main containerization tool. That includes writing Dockerfiles (including multi-stage builds) and using docker-compose to run multi-service applications."
+  categories: ["container","main"]
+  url: "https://www.docker.com/"
 
-# - name: Kubernetes
-#   logo: /images/sections/skills/kubernetes.png
-#   summary: "Basic understanding of Kubernetes and local development with minikube."
-#   categories: ["container"]
-#   url: "https://kubernetes.io/"
+- name: Kubernetes
+  logo: /images/sections/skills/kubernetes.png
+  summary: "Basic understanding of Kubernetes and local development with minikube."
+  categories: ["container"]
+  url: "https://kubernetes.io/"
 
-# - name: AWS
-#   logo: /images/sections/skills/aws.png
-#   summary: "I use AWS as a secondary cloud provider. That includes AWS Lambda, AWS S3, AWS EC2, AWS SQS and AWS SNS. I've briefly analyzed the capabilities of SageMaker too."
-#   categories: ["cloud", "api", "ml", "main"]
-#   url: "https://aws.amazon.com/"
+- name: AWS
+  logo: /images/sections/skills/aws.png
+  summary: "I use AWS as a secondary cloud provider. That includes AWS Lambda, AWS S3, AWS EC2, AWS SQS and AWS SNS. I've briefly analyzed the capabilities of SageMaker too."
+  categories: ["cloud", "api", "ml", "main"]
+  url: "https://aws.amazon.com/"
 
-# - name: Azure
-#   logo: /images/sections/skills/azure.png
-#   summary: "Main cloud used in the last few years. That includes Azure Devops repos and build pipelines, Azure Functions, Azure Blob Storage and Azure Machine Learning."
-#   categories: ["cloud", "api", "ml", "main"]
-#   url: "https://azure.microsoft.com/"
+- name: Azure
+  logo: /images/sections/skills/azure.png
+  summary: "Main cloud used in the last few years. That includes Azure Devops repos and build pipelines, Azure Functions, Azure Blob Storage and Azure Machine Learning."
+  categories: ["cloud", "api", "ml", "main"]
+  url: "https://azure.microsoft.com/"
 
-# - name: GCP
-#   logo: /images/sections/skills/gcp.webp
-#   summary: "Very brief experience with GCP. Analyzed the capabilities of Vertex AI framework and used Firebase for a side project."
-#   categories: ["cloud", "api", "ml"]
-#   url: "https://cloud.google.com/"
+- name: GCP
+  logo: /images/sections/skills/gcp.webp
+  summary: "Very brief experience with GCP. Analyzed the capabilities of Vertex AI framework and used Firebase for a side project."
+  categories: ["cloud", "api", "ml"]
+  url: "https://cloud.google.com/"
 
-# - name: FastAPI
-#   logo: /images/sections/skills/fastapi.png
-#   summary: "Main framework for building REST APIs. I use it to build backend services for my projects."
-#   categories: ["api", "main"]
-#   url: "https://fastapi.tiangolo.com/"
+- name: FastAPI
+  logo: /images/sections/skills/fastapi.png
+  summary: "Main framework for building REST APIs. I use it to build backend services for my projects."
+  categories: ["api", "main"]
+  url: "https://fastapi.tiangolo.com/"
 
-# - name: Flask
-#   logo: /images/sections/skills/flask.png
-#   summary: "Secondary framework for building APIs. I use it for quick prototyping where other communication protocols are needed (websockets, etc)."
-#   categories: ["api"]
-#   url: "https://flask.palletsprojects.com/"
+- name: Flask
+  logo: /images/sections/skills/flask.png
+  summary: "Secondary framework for building APIs. I use it for quick prototyping where other communication protocols are needed (websockets, etc)."
+  categories: ["api"]
+  url: "https://flask.palletsprojects.com/"
 
-# - name: gRPC
-#   logo: /images/sections/skills/grpc.png
-#   summary: "Main framework for building protobuf based APIs. I use it for communication between services, when performance is critical."
-#   categories: ["api"]
-#   url: "https://grpc.io/"
+- name: gRPC
+  logo: /images/sections/skills/grpc.png
+  summary: "Main framework for building protobuf based APIs. I use it for communication between services, when performance is critical."
+  categories: ["api"]
+  url: "https://grpc.io/"
 
-# - name: MQTT
-#   logo: /images/sections/skills/mqtt.png
-#   summary: "Main communication protocol and message broker for IoT applications. I use it for communication between devices and services."
-#   categories: ["api"]
-#   url: "https://mqtt.org/"
+- name: MQTT
+  logo: /images/sections/skills/mqtt.png
+  summary: "Main communication protocol and message broker for IoT applications. I use it for communication between devices and services."
+  categories: ["api"]
+  url: "https://mqtt.org/"
 
-# - name: Matplotlib
-#   logo: /images/sections/skills/matplotlib.png
-#   summary: "Main tool for creating plots and visualizations. I use it to visualize data and results of my projects."
-#   categories: ["ui", "main"]
-#   url: "https://matplotlib.org/"
+- name: Matplotlib
+  logo: /images/sections/skills/matplotlib.png
+  summary: "Main tool for creating plots and visualizations. I use it to visualize data and results of my projects."
+  categories: ["ui", "main"]
+  url: "https://matplotlib.org/"
 
-# - name: Plotly
-#   logo: /images/sections/skills/plotly.png
-#   summary: "Another visualization tool for creating plots and visualizations. I use it if I want interactive plots that can be embedded in web applications."
-#   categories: ["ui"]
-#   url: "https://plotly.com/"
+- name: Plotly
+  logo: /images/sections/skills/plotly.png
+  summary: "Another visualization tool for creating plots and visualizations. I use it if I want interactive plots that can be embedded in web applications."
+  categories: ["ui"]
+  url: "https://plotly.com/"
 
-# - name: Streamlit
-#   logo: /images/sections/skills/streamlit.png
-#   summary: "Main tool for prototyping application frontend. I use it to build dashboards for my projects."
-#   categories: ["ui"]
-#   url: "https://streamlit.io/"
+- name: Streamlit
+  logo: /images/sections/skills/streamlit.png
+  summary: "Main tool for prototyping application frontend. I use it to build dashboards for my projects."
+  categories: ["ui"]
+  url: "https://streamlit.io/"
 
 
 
