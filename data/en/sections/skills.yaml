@@ -100,16 +100,16 @@ skills:
   categories: ["main", "language"]
   url: "https://www.python.org/"
 
-# - name: C
-#   logo: /images/sections/skills/C_logo.png
-#   summary: "Know basic C programming. Used it for for numerical simulations in early research papers."
-#   categories: ["language"]
+- name: C
+  logo: /images/sections/skills/clogo.png
+  summary: "Know basic C programming. Used it for for numerical simulations in early research papers."
+  categories: ["language"]
   
-# - name: R
-#   logo: /images/sections/skills/R_logo.png
-#   summary: "Moderately experienced with R language. Used it for statistical analysis and data visualization."
-#   categories: ["language"]
-#   url: "https://www.r-project.org/"
+- name: R
+  logo: /images/sections/skills/rlogo.png
+  summary: "Moderately experienced with R language. Used it for statistical analysis and data visualization."
+  categories: ["language"]
+  url: "https://www.r-project.org/"
 
 - name: HTML and CSS
   logo: /images/sections/skills/html.png
