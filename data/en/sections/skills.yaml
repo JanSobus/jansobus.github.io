@@ -111,7 +111,7 @@ skills:
   categories: ["language"]
   url: "https://www.r-project.org/"
 
-- name: HTML + CSS
+- name: HTML and CSS
   logo: /images/sections/skills/html.png
   summary: "Basic knowledge of HTML and CSS. Used it for creating simple frontend for my projects (using Jinja templates)."
   categories: ["language"]
