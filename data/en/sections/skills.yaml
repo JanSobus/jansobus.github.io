@@ -81,51 +81,59 @@ skills:
   logo: /images/sections/skills/neo4j.png
   summary: "Using Neo4j as the main graph database."
   categories: ["data","ml"]
+  url: "https://neo4j.com/"
 
 - name: Redis
   logo: /images/sections/skills/redis.webp
   summary: "Using Redis as the main cache/in memory database."
   categories: ["data"]
+  url: "https://redis.io/"
 
 - name: File storage
   logo: /images/sections/skills/file-storage.jpg
   summary: "Using Blob Storage (Azure) and S3 (AWS) as the main cloud storage."
   categories: ["data","cloud"]
 
-# - name: Python
-#   logo: /images/sections/skills/python.png
-#   summary: "Extensive knowledge of Python language. That's my everyday tool for both data science and software development."
-#   categories: ["main", "language"]
+- name: Python
+  logo: /images/sections/skills/python.png
+  summary: "Extensive knowledge of Python language. That's my everyday tool for both data science and software development."
+  categories: ["main", "language"]
+  url: "https://www.python.org/"
 
-# - name: C
-#   logo: /images/sections/skills/C_logo.png
-#   summary: "Know basic C programming. Used it for for numerical simulations in early research papers."
-#   categories: ["language"]
+- name: C
+  logo: /images/sections/skills/C_logo.png
+  summary: "Know basic C programming. Used it for for numerical simulations in early research papers."
+  categories: ["language"]
   
-# - name: R
-#   logo: /images/sections/skills/R_logo.png
-#   summary: "Moderately experienced with R language. Used it for statistical analysis and data visualization."
-#   categories: ["language"]
+- name: R
+  logo: /images/sections/skills/R_logo.png
+  summary: "Moderately experienced with R language. Used it for statistical analysis and data visualization."
+  categories: ["language"]
+  url: "https://www.r-project.org/"
 
-# - name: HTML + CSS
-#   logo: /images/sections/skills/html.png
-#   summary: "Basic knowledge of HTML and CSS. Used it for creating simple frontend for my projects (using Jinja templates)."
-#   categories: ["language"]
+- name: HTML + CSS
+  logo: /images/sections/skills/html.png
+  summary: "Basic knowledge of HTML and CSS. Used it for creating simple frontend for my projects (using Jinja templates)."
+  categories: ["language"]
+  url: "https://www.w3schools.com/html/"
 
-# - name: SQL
-#   logo: /images/sections/skills/sql.png
-#   summary: "Moderately experienced with SQL. Used it for querying data sources. Prefer to use DuckDB for local development and Postgres for cloud deployments."
-#   categories: ["language"]
+- name: SQL
+  logo: /images/sections/skills/sql.png
+  summary: "Moderately experienced with SQL. Used it for querying data sources. Prefer to use DuckDB for local development and Postgres for cloud deployments."
+  categories: ["language"]
+  url: "https://www.w3schools.com/sql/"
 
-# - name: Java
-#   logo: /images/sections/skills/java.png
-#   summary: "Collaborated with Java backend developers on multiple projects. Familiar with the language (can understand code)."
-#   categories: ["language"]
+- name: Java
+  logo: /images/sections/skills/java.png
+  summary: "Collaborated with Java backend developers on multiple projects. Familiar with the language (can understand code)."
+  categories: ["language"]
+  url: "https://www.java.com/"
 
-# - name: Typescript
-#   logo: /images/sections/skills/typescript.png
-#   summary: "Basic knowledge of Typescript. Explored it for creating simple LLM based applications (as an alternative to Python)."
-#   categories: ["language"]
+- name: Typescript
+  logo: /images/sections/skills/typescript.png
+  summary: "Basic knowledge of Typescript. Explored it for creating simple LLM based applications (as an alternative to Python)."
+  categories: ["language"]
+  url: "https://www.typescriptlang.org/"
 
 
 # - name: Pytorch
