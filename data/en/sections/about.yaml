@@ -72,7 +72,7 @@ socialLinks:
 # For example, you can put link for your resume.
 resourceLinks:
 - title: "My Resume"
-  url: "files/resume.pdf"
+  url: "/files/Jan_Sobus_ML_2025.pdf"
 
 # Show your badges
 # You can show your verifiable certificates from https://www.credly.com.
