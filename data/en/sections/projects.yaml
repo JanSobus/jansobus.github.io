@@ -23,6 +23,14 @@ buttons:
 
 # your projects
 projects:
+- name: Protobuf payloads over REST using FastAPI
+  logo: /images/sections/projects/fastapi.png
+  role: Author
+  timeline: "2025"
+  repo: https://github.com/JanSobus/fastapi_protobuf/ # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  summary: A demo repository showing the concept of Protobuf payloads over REST using FastAPI with JSON and bytestring serialization utilizing custom ASGI middleware.
+  tags: ["coding"]
+
 - name: Named entity recognition demo
   logo: /images/sections/projects/transformers.png
   role: Author
