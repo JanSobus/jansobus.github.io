@@ -8,11 +8,11 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Data Science Architect
+designation: Principal Applied AI Researcher
 # your company information
 company:
-  name: Caterpillar
-  url: "https://www.caterpillar.com/"
+  name: Oracle
+  url: "https://www.oracle.com/"
 
 # your resume. this file path should be relative to you "static" directory
 # Dreprecated. Use resourceLinks instead.
@@ -20,10 +20,9 @@ company:
 
 # a summary about you
 summary: |
-  <div style="text-align: justify">I am a passionate machine learning engineer and data architect with research background and over 5 years of industry experience. 
-  I built <a href="https://www.exci.ai/">end-to-end computer vision solution for wildfire detection</a>. 
-  Now I am working on several projects utilizing AI to maintain Caterpillar's lead in the fields of mine productivity, electrification, and automation. 
-  Those cover the fields of computer vision, natural language processing, and time series analysis.
+  <div style="text-align: justify">I am a passionate AI researcher and engineer with a physics background and over 5 years of industry experience.
+  I built <a href="https://www.exci.ai/">end-to-end computer vision solution for wildfire detection</a> and led data science teams at <a href="https://www.caterpillar.com/">Caterpillar</a>.
+  Now I am working on multi-agent AI solutions for healthcare at Oracle, focusing on security, privacy and robustness in sensitive domains.
   I love solving problems (while learning new things) and turning solutions into business value.</div>
 
 # your social links
@@ -62,7 +61,7 @@ socialLinks:
 
 - name: ResearchGate
   icon: "fab fa-researchgate"
-  url: "https://www.researchgate.net/profile/john-doe"
+  url: "https://www.researchgate.net/profile/Jan-Sobus"
 
 - name: Google Scholar
   icon: "fab fa-google"

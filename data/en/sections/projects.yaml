@@ -23,6 +23,14 @@ buttons:
 
 # your projects
 projects:
+- name: Medical Annotation Tool
+  logo: /images/sections/projects/medical-annotation.svg
+  role: Author
+  timeline: "2026"
+  repo: https://github.com/JanSobus/medical-annotation
+  summary: A full-stack web application for annotating medical text with entities and relationships. Combines manual annotation with AI-powered extraction using PydanticAI and GPT-4o-mini. Built with FastAPI, React, TypeScript, and Docker.
+  tags: ["coding", "ai"]
+
 - name: Protobuf payloads over REST using FastAPI
   logo: /images/sections/projects/fastapi.png
   role: Author
