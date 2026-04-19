@@ -11,6 +11,15 @@ section:
 
 # Your accomplishments
 accomplishments:
+- name: AI Devs 4 - Builders
+  timeline: "March 2026 - April 2026"
+  organization:
+    name: AI Devs
+    url: https://www.aidevs.pl
+
+  courseOverview: An intensive 5-week cohort program focused on building and deploying production-ready generative AI solutions. Covered using LLMs in code (APIs, function calling, multi-modal), context engineering, prompt cache, multi-agent architectures, observability and evals, and designing scalable AI-powered applications with human-in-the-loop workflows.
+  certificateURL: "https://credsverse.com/credentials/eea4dbf4-25bf-4386-bb26-a50d2aa6e25e"
+
 - name: AI Devs 3 - Agents
   timeline: "December 2024 - January 2025"
   organization:
