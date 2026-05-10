@@ -207,7 +207,7 @@ skills:
 
 - name: Kubernetes
   logo: /images/sections/skills/kubernetes.png
-  summary: "Basic understanding of Kubernetes and local development with minikube."
+  summary: "Experienced in containerizing and deploying services to Kubernetes, running production pipelines on Azure, and local cluster development with Kind."
   categories: ["container"]
   url: "https://kubernetes.io/"
 
