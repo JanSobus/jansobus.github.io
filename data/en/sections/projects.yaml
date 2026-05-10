@@ -23,6 +23,14 @@ buttons:
 
 # your projects
 projects:
+- name: K8s LLM Job
+  logo: /images/sections/skills/kubernetes.png
+  role: Author
+  timeline: "2026"
+  repo: https://github.com/JanSobus/k8s-llm-job
+  summary: A reference platform for scalable LLM serving on Kubernetes. Features a FastAPI + HTMX frontend, Kubernetes Jobs for batch workloads (PDF extraction, tabular analysis), KServe/vLLM for self-hosted model serving, MinIO for object storage, and Prometheus/Grafana observability.
+  tags: ["coding", "ai"]
+
 - name: Medical Annotation Tool
   logo: /images/sections/projects/medical-annotation.svg
   role: Author

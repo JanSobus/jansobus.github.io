@@ -2,5 +2,6 @@ resources/*
 node_modules/*
 public/*
 .hugo_build.lock
+_vendor/
 .claude/
 CLAUDE.md
